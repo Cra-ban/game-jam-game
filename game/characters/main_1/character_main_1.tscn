@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://iu5okivekgrm"]
+
+[ext_resource type="Script" uid="uid://c6lbdtm3axgdr" path="res://game/characters/main_1/character_main_1.gd" id="1_e64v4"]
+
+[node name="CharacterMain1" type="Area2D" unique_id=38116622]
+script = ExtResource("1_e64v4")
+walk_speed = 2000.0
+script_name = "Main1"
+description = "Main 1"
+cursor = 8
+interaction_polygon = PackedVector2Array(48.299988, -182.70001, 268.49994, -113.40001, 303.69995, -79.100006, 40.5, 186.8, -232.20001, 70.500015)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="." unique_id=928768253]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=830066867]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1197766684]
+position = Vector2(34, -3.0517578e-05)
+scale = Vector2(0.26968798, 0.26968795)
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=170611994]
+visible = false
+polygon = PackedVector2Array(48.299988, -182.70001, 268.49994, -113.40001, 303.69995, -79.100006, 40.5, 186.8, -232.20001, 70.500015)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=383716055]
+visible = false
+vertices = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+affect_navigation_mesh = true
+carve_navigation_mesh = true

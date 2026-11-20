@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c5sq7a0cgih0h"]
+
+[ext_resource type="Script" uid="uid://55g1ia84nmi7" path="res://game/rooms/house/room_house.gd" id="1_66ves"]
+[ext_resource type="PackedScene" uid="uid://tay03wpvmmnu" path="res://game/rooms/house/props/backgound/prop_backgound.tscn" id="2_7v3ei"]
+[ext_resource type="Texture2D" uid="uid://bkqgcvy2dtaop" path="res://game/rooms/house/props/backgound/hills-prototype.jpg" id="3_3i422"]
+[ext_resource type="PackedScene" uid="uid://ddc8obc2s13o" path="res://game/rooms/house/hotspots/door/hotspot_door.tscn" id="4_4cvh3"]
+
+[node name="RoomHouse" type="Node2D" unique_id=170572198]
+script = ExtResource("1_66ves")
+script_name = "House"
+width = 1920
+height = 1080
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=1804013761]
+
+[node name="Props" type="Node2D" parent="." unique_id=1424999919]
+
+[node name="Backgound" parent="Props" unique_id=271463874 instance=ExtResource("2_7v3ei")]
+position = Vector2(960, 540)
+texture = ExtResource("3_3i422")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+metadata/_edit_lock_ = true
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=896508273]
+
+[node name="Door" parent="Hotspots" unique_id=1472958182 instance=ExtResource("4_4cvh3")]
+position = Vector2(897, 324)
+walk_to_point = Vector2(16.44629, 47.9339)
+look_at_point = Vector2(-17.107422, -5.041321)
+interaction_polygon = PackedVector2Array(-58.363647, -29.272736, 49.272705, -30.181854, 134.72723, 14.727234, -160.18182, 28.363647)
+
+[node name="Regions" type="Node2D" parent="." unique_id=105928886]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1229370921]
+
+[node name="Characters" type="Node2D" parent="." unique_id=966799672]
