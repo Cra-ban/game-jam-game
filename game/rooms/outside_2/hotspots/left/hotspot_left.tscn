@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dw1js5forsr5a"]
+
+[ext_resource type="Script" path="res://game/rooms/outside_2/hotspots/left/hotspot_left.gd" id="1_duepk"]
+
+[node name="Left" type="Area2D" unique_id=1396841469]
+script = ExtResource("1_duepk")
+script_name = "Left"
+description = "Left"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1015666702]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)

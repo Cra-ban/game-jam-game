@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dcy3txdawrj3w"]
+
+[ext_resource type="Script" path="res://game/rooms/outside_2/props/datacenter/prop_datacenter.gd" id="1_iptjp"]
+
+[node name="Datacenter" type="Area2D" unique_id=1120892275]
+input_pickable = false
+script = ExtResource("1_iptjp")
+script_name = "Datacenter"
+description = "Datacenter"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1643263842]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=204052836]
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=560213916]
+visible = false
+modulate = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=1996998721]
+visible = false
+affect_navigation_mesh = true
+carve_navigation_mesh = true

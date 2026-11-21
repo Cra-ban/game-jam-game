@@ -35,9 +35,11 @@ interaction_polygon = PackedVector2Array(-34.029675, -33.66217, 42.791786, -33.6
 
 [node name="Cow" parent="Props" unique_id=1174651226 instance=ExtResource("6_v56lp")]
 position = Vector2(202, 120)
+input_pickable = true
 texture = ExtResource("7_2mni4")
-obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-interaction_polygon = PackedVector2Array(-12, -12, 11.802155, -12, 12, 12, -12, 12)
+obstacle_polygon = [Vector2(-20.802158, -14.436506), Vector2(-9.944653, -15.58639), Vector2(-8.269482, -8.550669), Vector2(19.908737, -8.405891), Vector2(22.88871, 5.8558083), Vector2(16, 16), Vector2(-10.081062, 15.329933), Vector2(-9.49794, 4.515671), Vector2(-20.665752, -4.7536125)]
+clickable = true
+interaction_polygon = PackedVector2Array(-19.929142, -14.568596, -9.162907, -15.474712, -8.523258, -8.202942, 20.487534, -8.437096, 22.88871, 5.8558083, 17.304802, 15.125092, -10.838074, 15.013412, -10.101467, 4.4058876, -17.538765, -1.6266251, -21.112465, -5.312004)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=423333462]
 

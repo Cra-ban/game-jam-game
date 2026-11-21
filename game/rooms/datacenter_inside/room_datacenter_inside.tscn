@@ -21,6 +21,9 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="RamStick" parent="Props" unique_id=590388604 instance=ExtResource("3_jn7th")]
 position = Vector2(160, 100)
+input_pickable = true
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+clickable = true
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=2078656110]
