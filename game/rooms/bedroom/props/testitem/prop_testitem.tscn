@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://rkuoxumousjn"]
 
-[ext_resource type="Script" path="res://game/rooms/bedroom/props/testitem/prop_testitem.gd" id="1_qj6so"]
+[ext_resource type="Script" uid="uid://dqtw4d6o1skot" path="res://game/rooms/bedroom/props/testitem/prop_testitem.gd" id="1_qj6so"]
 
 [node name="Testitem" type="Area2D" unique_id=2005327005]
 script = ExtResource("1_qj6so")
 script_name = "Testitem"
 description = "Testitem"
 cursor = 1
-interaction_polygon = PackedVector2Array()
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1823531348]
 texture_filter = 1
