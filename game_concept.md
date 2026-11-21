@@ -1,4 +1,5 @@
 # Sam altman stole my ram (working title)
+- RAM-Altman
 
 ## Style
 - **Artstyle:** weird indie unhinged (hylics esque)
