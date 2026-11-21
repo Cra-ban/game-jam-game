@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c74srhw648yba"]
+
+[ext_resource type="Script" path="res://game/rooms/bedroom/hotspots/chair/hotspot_chair.gd" id="1_d85h2"]
+
+[node name="Chair" type="Area2D" unique_id=1186041753]
+script = ExtResource("1_d85h2")
+script_name = "Chair"
+description = "Chair"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1884203760]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)

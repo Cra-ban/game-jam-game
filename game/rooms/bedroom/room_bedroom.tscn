@@ -7,6 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://c4rin372corpg" path="res://game/rooms/bedroom/hotspots/computer/hotspot_computer.tscn" id="5_b0qso"]
 [ext_resource type="PackedScene" uid="uid://ce5wh1hs1ta2l" path="res://game/characters/main/character_main.tscn" id="5_dobob"]
 [ext_resource type="PackedScene" uid="uid://bxt77s8wbv8y1" path="res://game/rooms/bedroom/hotspots/bed/hotspot_bed.tscn" id="6_7u1vy"]
+[ext_resource type="PackedScene" uid="uid://dbnu53x6lqlcf" path="res://game/rooms/bedroom/hotspots/fan/hotspot_fan.tscn" id="7_keusb"]
+[ext_resource type="PackedScene" uid="uid://5udecbthvddy" path="res://game/rooms/bedroom/hotspots/drawer_1/hotspot_drawer_1.tscn" id="8_l3jsk"]
+[ext_resource type="PackedScene" uid="uid://ufb6gmae60y0" path="res://game/rooms/bedroom/hotspots/drawer_2/hotspot_drawer_2.tscn" id="9_ncic5"]
+[ext_resource type="PackedScene" uid="uid://c74srhw648yba" path="res://game/rooms/bedroom/hotspots/chair/hotspot_chair.tscn" id="10_i3rc1"]
 
 [node name="RoomBedroom" type="Node2D" unique_id=773165945]
 script = ExtResource("1_yl6fe")
@@ -47,6 +51,30 @@ baseline = 17
 walk_to_point = Vector2(-6.1290283, -20.078186)
 look_at_point = Vector2(-5.7020264, -10.078674)
 interaction_polygon = PackedVector2Array(-958.51227, -428.81635, -913.3445, -423.62952, -874.32007, -402.2794, -872.0028, -386.05817, -875.7438, -374.52063, -893.1483, -367.22998, -892.5919, -348.6839, -899.81055, -347.8225, -900.9693, -365.20233, -958.72845, -341.0325)
+
+[node name="Fan" parent="Hotspots" unique_id=538602074 instance=ExtResource("7_keusb")]
+position = Vector2(197, 52)
+baseline = -1
+walk_to_point = Vector2(-1.7337036, -3.1204834)
+look_at_point = Vector2(1.8027954, -2.0803223)
+interaction_polygon = PackedVector2Array(-3.5401163, -7.9780865, 3.6539583, -7.819916, 9.539275, -2.5524158, 8.52402, 4.7574234, 3.8538465, 8.412342, 4.1584215, 14.909977, 7.81334, 15.620659, 8.117917, 18.158794, -5.38498, 18.463371, -5.283455, 14.706928, 0.40197563, 14.808453, -0.30870342, 8.818447, -7.720068, 4.1482716, -7.571985, -3.0325603)
+
+[node name="Drawer1" parent="Hotspots" unique_id=1740154255 instance=ExtResource("8_l3jsk")]
+position = Vector2(284, 106)
+baseline = -9
+walk_to_point = Vector2(-2.8510437, -9.567192)
+look_at_point = Vector2(10.636383, -12.066116)
+interaction_polygon = PackedVector2Array(-23.445553, -22.628017, 31.130428, -20.665922, 30.476383, 10.037907, -24.059593, 8.358257)
+
+[node name="Drawer2" parent="Hotspots" unique_id=664931511 instance=ExtResource("9_ncic5")]
+position = Vector2(285, 140)
+walk_to_point = Vector2(4.7910156, -2.3341064)
+look_at_point = Vector2(-0.8599243, 4.668152)
+interaction_polygon = PackedVector2Array(-25.080631, -22.955029, 28.187286, -18.540316, 26.87922, 31.457443, -26.06168, 24.917126)
+
+[node name="Chair" parent="Hotspots" unique_id=1186041753 instance=ExtResource("10_i3rc1")]
+position = Vector2(960, 540)
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Regions" type="Node2D" parent="." unique_id=786425560]
 

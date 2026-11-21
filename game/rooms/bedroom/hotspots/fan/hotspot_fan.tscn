@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dbnu53x6lqlcf"]
+
+[ext_resource type="Script" path="res://game/rooms/bedroom/hotspots/fan/hotspot_fan.gd" id="1_q3rv3"]
+
+[node name="Fan" type="Area2D" unique_id=538602074]
+script = ExtResource("1_q3rv3")
+script_name = "Fan"
+description = "Fan"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1662302608]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://5udecbthvddy"]
+
+[ext_resource type="Script" path="res://game/rooms/bedroom/hotspots/drawer_1/hotspot_drawer_1.gd" id="1_60j76"]
+
+[node name="Drawer1" type="Area2D" unique_id=1740154255]
+script = ExtResource("1_60j76")
+script_name = "Drawer1"
+description = "Drawer 1"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1226077068]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
