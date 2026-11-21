@@ -17,14 +17,14 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*uid://cb7l4kw3h7h08"
+Globals="*uid://bfvt67phthvjg"
 Cursor="*uid://c2pqh7ajiuiy0"
 E="*uid://rda8wggldt5o"
-R="*uid://d1bndhtjhqcfx"
-C="*uid://c330mlkjw2n3y"
-I="*uid://vgf1f3vder8i"
-D="*uid://bcp001rj50qkg"
-A="*uid://ben1xnlrre8kn"
+R="*uid://dqd5jo08ok017"
+C="*uid://dp54cye62mnsq"
+I="*uid://ciedcr3c764hf"
+D="*uid://dpfrwmsermfrq"
+A="*uid://cb6hpa6msh0ib"
 G="*uid://blk6nfpfiqrd2"
 T="*uid://30lm6k5s368s"
 
@@ -66,7 +66,7 @@ popochiu-skip={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://game/rooms/home/room_home.gd", "res://game/rooms/home/props/newspaper/prop_newspaper.gd", "res://game/rooms/home/props/background/prop_background.gd", "res://game/rooms/home/hotspots/door/hotspot_door.gd", "res://game/rooms/home/hotspots/pc/hotspot_pc.gd", "res://game/characters/main/character_main.gd", "res://game/characters/main_1/character_main_1.gd", "res://game/rooms/house/room_house.gd", "res://game/rooms/house/props/backgound/prop_backgound.gd", "res://game/rooms/house/hotspots/door/hotspot_door.gd")
+locale/translations_pot_files=PackedStringArray("res://game/rooms/home/room_home.gd", "res://game/rooms/home/props/newspaper/prop_newspaper.gd", "res://game/rooms/home/props/background/prop_background.gd", "res://game/rooms/home/hotspots/door/hotspot_door.gd", "res://game/rooms/home/hotspots/pc/hotspot_pc.gd", "res://game/characters/main/character_main.gd", "res://game/characters/main_1/character_main_1.gd", "res://game/rooms/house/room_house.gd", "res://game/rooms/house/props/backgound/prop_backgound.gd", "res://game/rooms/house/hotspots/door/hotspot_door.gd", "res://game/rooms/bedroom/hotspots/bed/hotspot_bed.gd")
 
 [physics]
 
