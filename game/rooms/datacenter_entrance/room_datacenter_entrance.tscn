@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cil4lvr526rqy" path="res://game/rooms/datacenter_entrance/room_datacenter_entrance.gd" id="1_m7obe"]
 [ext_resource type="PackedScene" uid="uid://ou88gcecj6lo" path="res://game/rooms/datacenter_entrance/props/background/prop_background.tscn" id="2_bghlv"]
+[ext_resource type="PackedScene" uid="uid://dpi54pn8afq4i" path="res://game/rooms/datacenter_entrance/hotspots/door/hotspot_door.tscn" id="3_ww6jf"]
 
 [node name="RoomDatacenterEntrance" type="Node2D" unique_id=57640622]
 script = ExtResource("1_m7obe")
@@ -15,9 +16,14 @@ height = 200
 
 [node name="Background" parent="Props" unique_id=929789162 instance=ExtResource("2_bghlv")]
 position = Vector2(160, 100)
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=273248385]
+
+[node name="Door" parent="Hotspots" unique_id=1168544005 instance=ExtResource("3_ww6jf")]
+position = Vector2(160, 100)
+interaction_polygon = PackedVector2Array(-30.627625, -34.35315, 46.150665, -44.287888, 37.457764, 33.73224, -34.353165, 32.490387)
 
 [node name="Regions" type="Node2D" parent="." unique_id=1594885249]
 

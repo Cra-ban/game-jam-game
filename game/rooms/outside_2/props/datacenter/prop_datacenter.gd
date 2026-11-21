@@ -8,12 +8,8 @@ extends PopochiuProp
 #region Virtual ####################################################################################
 # Called when the prop is clicked
 func _on_click() -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
-	# Example: make the player walk to this prop, face it, then say a line:
-#	await C.player.walk_to_clicked()
-#	await C.player.face_clicked()
-#	await C.player.say("Not picking that up!")
+	R.goto_room("DatacenterEntrance")
+
 
 
 # Called when the prop is double-clicked
