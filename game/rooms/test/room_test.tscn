@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dew0vpp2emcnc"]
+
+[ext_resource type="Script" uid="uid://b123u8mbg55xj" path="res://game/rooms/test/room_test.gd" id="1_u7p72"]
+[ext_resource type="PackedScene" uid="uid://c4hk5gnv2rmsy" path="res://game/rooms/test/props/background/prop_background.tscn" id="2_oxolr"]
+[ext_resource type="Texture2D" uid="uid://bef3hn8rhxa81" path="res://game/rooms/test/props/background/hills.png" id="3_61w3o"]
+[ext_resource type="PackedScene" uid="uid://dako5y6ospvf3" path="res://game/rooms/test/props/house/prop_house.tscn" id="4_pgxwu"]
+[ext_resource type="Texture2D" uid="uid://cea2w11u0db3c" path="res://game/assets/house_no_path.png" id="5_5jv0e"]
+[ext_resource type="PackedScene" uid="uid://bov5wlrptsi4r" path="res://game/rooms/test/hotspots/right_side/hotspot_right_side.tscn" id="6_5jv0e"]
+
+[node name="RoomTest" type="Node2D" unique_id=915716085]
+script = ExtResource("1_u7p72")
+script_name = "Test"
+width = 320
+height = 200
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=981086313]
+
+[node name="Props" type="Node2D" parent="." unique_id=1223012289]
+
+[node name="Background" parent="Props" unique_id=17119360 instance=ExtResource("2_oxolr")]
+position = Vector2(320, 95)
+texture = ExtResource("3_61w3o")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+metadata/_edit_lock_ = true
+
+[node name="House" parent="Props" unique_id=103080745 instance=ExtResource("4_pgxwu")]
+position = Vector2(54, 89)
+texture = ExtResource("5_5jv0e")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+baseline = 22
+interaction_polygon = PackedVector2Array(-34.029675, -33.66217, 42.791786, -33.61448, 43.506233, 21.9516, -34.037155, 22.063812)
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=423333462]
+
+[node name="RightSide" parent="Hotspots" unique_id=522831422 instance=ExtResource("6_5jv0e")]
+position = Vector2(318, 107)
+description = "Go right"
+walk_to_point = Vector2(-14.267212, -0.4650116)
+look_at_point = Vector2(-9.3993225, -2.001793)
+interaction_polygon = PackedVector2Array(-38.490997, -89.99305, 2.973648, -93.48188, 3.6411438, 95.115555, -28.03218, 95.13762)
+
+[node name="Regions" type="Node2D" parent="." unique_id=844636176]
+
+[node name="Markers" type="Node2D" parent="." unique_id=939436736]
+
+[node name="Characters" type="Node2D" parent="." unique_id=351202996]
+visible = false

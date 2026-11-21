@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bov5wlrptsi4r"]
+
+[ext_resource type="Script" path="res://game/rooms/test/hotspots/right_side/hotspot_right_side.gd" id="1_r3qox"]
+
+[node name="RightSide" type="Area2D" unique_id=522831422]
+script = ExtResource("1_r3qox")
+script_name = "RightSide"
+description = "Right Side"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=2104697673]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
