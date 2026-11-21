@@ -15,4 +15,3 @@ var Bedroom: PRBedroom : get = get_Bedroom
 func get_Test() -> PRTest: return get_runtime_room("Test")
 func get_Bedroom() -> PRBedroom: return get_runtime_room("Bedroom")
 # ---- functions
-

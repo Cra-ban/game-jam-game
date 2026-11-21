@@ -27,11 +27,8 @@ func _on_double_click() -> void:
 
 # When the hotspot is right clicked
 func _on_right_click() -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
-	# Example: make the player face this hotspot and say a line:
-#	await C.player.face_clicked()
-#	await C.player.say("A window")
+	await C.player.say("its a chair")
+
 
 
 # Called when the hotspot is middle clicked

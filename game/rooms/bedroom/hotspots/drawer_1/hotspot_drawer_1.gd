@@ -8,12 +8,8 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the hotspot is clicked
 func _on_click() -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
-	# Example: make the player walk to this hotspot, face it, then say something:
-#	await C.player.walk_to_clicked()
-#	await C.player.face_clicked()
-#	await C.player.say("What a nice view")
+	await C.player.say("i found my OBJECT")
+
 
 
 # Called when the hotspot is double-clicked
@@ -27,11 +23,8 @@ func _on_double_click() -> void:
 
 # When the hotspot is right clicked
 func _on_right_click() -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
-	# Example: make the player face this hotspot and say a line:
-#	await C.player.face_clicked()
-#	await C.player.say("A window")
+	await C.player.say("My Drawer where i put my OBJECTS")
+
 
 
 # Called when the hotspot is middle clicked
