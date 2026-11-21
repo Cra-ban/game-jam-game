@@ -25,8 +25,11 @@ look_at_point = Vector2(-0.90908813, 5.454544)
 
 [node name="Powerlines" parent="Props" unique_id=308352997 instance=ExtResource("5_chpu1")]
 position = Vector2(160, 100)
+
 texture = ExtResource("4_sr43a")
+
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+clickable = true
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 metadata/_edit_lock_ = true
 

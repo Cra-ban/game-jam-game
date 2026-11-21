@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" path="res://game/rooms/datacenter_entrance/hotspots/back/hotspot_back.gd" id="1_mf0ne"]
 
+
 [node name="Back" type="Area2D" unique_id=1393546437]
+
 script = ExtResource("1_mf0ne")
 script_name = "Back"
 description = "Back"
@@ -10,6 +12,7 @@ cursor = 1
 interaction_polygon = PackedVector2Array()
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1032218665]
+
 visible = false
 modulate = Color(1, 0, 1, 1)
 polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
