@@ -23,8 +23,10 @@ look_at_point = Vector2(-0.90908813, 5.454544)
 
 [node name="Datacenter" parent="Props" unique_id=1120892275 instance=ExtResource("3_cdy33")]
 position = Vector2(160, 100)
+input_pickable = true
 texture = ExtResource("4_4rrki")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+clickable = true
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=777481841]
