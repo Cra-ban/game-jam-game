@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://c8squrwc6kqli"]
+
+[ext_resource type="Script" path="res://game/inventory_items/ram_sitck/inventory_item_ram_sitck_state.gd" id="1_hqicw"]
+
+[resource]
+resource_name = "RamSitck"
+script = ExtResource("1_hqicw")
+script_name = "RamSitck"
+scene = "res://game/inventory_items/ram_sitck/inventory_item_ram_sitck.tscn"

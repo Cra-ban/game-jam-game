@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c7r0nko4n5ed5"]
+
+[ext_resource type="Script" path="res://game/rooms/test/props/cow/prop_cow.gd" id="1_efu3q"]
+
+[node name="Cow" type="Area2D" unique_id=1174651226]
+input_pickable = false
+script = ExtResource("1_efu3q")
+script_name = "Cow"
+description = "Cow"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1241688533]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1473938498]
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1085421643]
+visible = false
+modulate = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=1369977726]
+visible = false
+affect_navigation_mesh = true
+carve_navigation_mesh = true

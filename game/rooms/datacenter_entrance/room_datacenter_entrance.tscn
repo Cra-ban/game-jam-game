@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dift7froeyu8s"]
+
+[ext_resource type="Script" uid="uid://cil4lvr526rqy" path="res://game/rooms/datacenter_entrance/room_datacenter_entrance.gd" id="1_m7obe"]
+[ext_resource type="PackedScene" uid="uid://ou88gcecj6lo" path="res://game/rooms/datacenter_entrance/props/background/prop_background.tscn" id="2_bghlv"]
+
+[node name="RoomDatacenterEntrance" type="Node2D" unique_id=57640622]
+script = ExtResource("1_m7obe")
+script_name = "DatacenterEntrance"
+width = 320
+height = 200
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=1012859485]
+
+[node name="Props" type="Node2D" parent="." unique_id=2058921125]
+
+[node name="Background" parent="Props" unique_id=929789162 instance=ExtResource("2_bghlv")]
+position = Vector2(160, 100)
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=273248385]
+
+[node name="Regions" type="Node2D" parent="." unique_id=1594885249]
+
+[node name="Markers" type="Node2D" parent="." unique_id=754244218]
+
+[node name="Characters" type="Node2D" parent="." unique_id=1663278189]

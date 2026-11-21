@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ch6h0f3o6ehpe"]
+
+[ext_resource type="Script" path="res://game/rooms/datacenter_inside/props/ram_stick/prop_ram_stick.gd" id="1_bkyt8"]
+
+[node name="RamStick" type="Area2D" unique_id=590388604]
+input_pickable = false
+script = ExtResource("1_bkyt8")
+script_name = "RamStick"
+description = "Ram Stick"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=367981834]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1210428342]
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1076436008]
+visible = false
+modulate = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=595317171]
+visible = false
+affect_navigation_mesh = true
+carve_navigation_mesh = true

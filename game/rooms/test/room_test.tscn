@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dako5y6ospvf3" path="res://game/rooms/test/props/house/prop_house.tscn" id="4_pgxwu"]
 [ext_resource type="Texture2D" uid="uid://cea2w11u0db3c" path="res://game/assets/house_no_path.png" id="5_5jv0e"]
 [ext_resource type="PackedScene" uid="uid://bov5wlrptsi4r" path="res://game/rooms/test/hotspots/right_side/hotspot_right_side.tscn" id="6_5jv0e"]
+[ext_resource type="PackedScene" uid="uid://c7r0nko4n5ed5" path="res://game/rooms/test/props/cow/prop_cow.tscn" id="6_v56lp"]
+[ext_resource type="Texture2D" uid="uid://cmeshgnghdn8j" path="res://game/assets/cow_dither.png" id="7_2mni4"]
 
 [node name="RoomTest" type="Node2D" unique_id=915716085]
 script = ExtResource("1_u7p72")
@@ -30,6 +32,12 @@ texture = ExtResource("5_5jv0e")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 baseline = 22
 interaction_polygon = PackedVector2Array(-34.029675, -33.66217, 42.791786, -33.61448, 43.506233, 21.9516, -34.037155, 22.063812)
+
+[node name="Cow" parent="Props" unique_id=1174651226 instance=ExtResource("6_v56lp")]
+position = Vector2(202, 120)
+texture = ExtResource("7_2mni4")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-12, -12, 11.802155, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=423333462]
 

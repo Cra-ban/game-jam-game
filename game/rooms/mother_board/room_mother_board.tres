@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://bpqchxcg133ox"]
+
+[ext_resource type="Script" path="res://game/rooms/mother_board/room_mother_board_state.gd" id="1_8mxdq"]
+
+[resource]
+resource_name = "MotherBoard"
+script = ExtResource("1_8mxdq")
+script_name = "MotherBoard"
+scene = "res://game/rooms/mother_board/room_mother_board.tscn"

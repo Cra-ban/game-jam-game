@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://bk8p8am2cjh4h"]
+
+[ext_resource type="Script" path="res://game/rooms/datacenter_inside/room_datacenter_inside_state.gd" id="1_j1egu"]
+
+[resource]
+resource_name = "DatacenterInside"
+script = ExtResource("1_j1egu")
+script_name = "DatacenterInside"
+scene = "res://game/rooms/datacenter_inside/room_datacenter_inside.tscn"

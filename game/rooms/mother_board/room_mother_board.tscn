@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bek57wqd5u6fg"]
+
+[ext_resource type="Script" uid="uid://coao0bxn5a84s" path="res://game/rooms/mother_board/room_mother_board.gd" id="1_anaal"]
+[ext_resource type="PackedScene" uid="uid://c3fnyilrhtt7m" path="res://game/rooms/mother_board/props/background/prop_background.tscn" id="2_mlh2m"]
+[ext_resource type="PackedScene" uid="uid://bx0wbwg78tst0" path="res://game/rooms/mother_board/props/post_it/prop_post_it.tscn" id="3_mm6vm"]
+
+[node name="RoomMotherBoard" type="Node2D" unique_id=571736896]
+script = ExtResource("1_anaal")
+script_name = "MotherBoard"
+width = 320
+height = 200
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=1939215842]
+
+[node name="Props" type="Node2D" parent="." unique_id=149700406]
+
+[node name="Background" parent="Props" unique_id=629791743 instance=ExtResource("2_mlh2m")]
+position = Vector2(160, 100)
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="PostIt" parent="Props" unique_id=1590418797 instance=ExtResource("3_mm6vm")]
+position = Vector2(160, 100)
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=1448188749]
+
+[node name="Regions" type="Node2D" parent="." unique_id=387638758]
+
+[node name="Markers" type="Node2D" parent="." unique_id=16304786]
+
+[node name="Characters" type="Node2D" parent="." unique_id=1335201950]

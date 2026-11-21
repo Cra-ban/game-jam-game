@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://8qa1wi0uij0o"]
+
+[ext_resource type="Script" path="res://game/rooms/datacenter_entrance/room_datacenter_entrance_state.gd" id="1_qi3lu"]
+
+[resource]
+resource_name = "DatacenterEntrance"
+script = ExtResource("1_qi3lu")
+script_name = "DatacenterEntrance"
+scene = "res://game/rooms/datacenter_entrance/room_datacenter_entrance.tscn"
