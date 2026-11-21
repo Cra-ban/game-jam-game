@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://clmhujdi153ng" path="res://game/rooms/datacenter_inside/room_datacenter_inside.gd" id="1_6vwyu"]
 [ext_resource type="PackedScene" uid="uid://cj8twqnfepw5" path="res://game/rooms/datacenter_inside/props/background/prop_background.tscn" id="2_30x6c"]
-[ext_resource type="PackedScene" uid="uid://ch6h0f3o6ehpe" path="res://game/rooms/datacenter_inside/props/ram_stick/prop_ram_stick.tscn" id="3_jn7th"]
+[ext_resource type="Texture2D" uid="uid://de7jk831d8toi" path="res://game/assets/stolen_dithered.png" id="3_6qpst"]
+[ext_resource type="PackedScene" uid="uid://dmko34njpeb0n" path="res://game/rooms/datacenter_inside/props/ram_stick/prop_ram_stick.tscn" id="3_jn7th"]
 [ext_resource type="Texture2D" uid="uid://bn2fn1e5qv8sd" path="res://game/assets/ramdither.png" id="4_08gqr"]
 [ext_resource type="PackedScene" uid="uid://x5s2quysooiu" path="res://game/rooms/datacenter_inside/hotspots/back/hotspot_back.tscn" id="5_weauc"]
 
@@ -18,15 +19,14 @@ height = 200
 
 [node name="Background" parent="Props" unique_id=426049699 instance=ExtResource("2_30x6c")]
 position = Vector2(160, 100)
+texture = ExtResource("3_6qpst")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+interaction_polygon = PackedVector2Array(-29.161573, 6.91827, 17.540352, -18.080873, 26.14479, -4.295351, 28.756187, 17.13496, -24.296875, 17.67548)
 
-[node name="RamStick" parent="Props" unique_id=590388604 instance=ExtResource("3_jn7th")]
+[node name="RamStick" parent="Props" unique_id=1519793265 instance=ExtResource("3_jn7th")]
 position = Vector2(160, 100)
-input_pickable = true
 texture = ExtResource("4_08gqr")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-clickable = true
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=2078656110]
@@ -42,3 +42,4 @@ interaction_polygon = PackedVector2Array(-162.26292, -8.274445, 150.75162, -4.94
 [node name="Markers" type="Node2D" parent="." unique_id=845380452]
 
 [node name="Characters" type="Node2D" parent="." unique_id=1301835937]
+visible = false

@@ -14,7 +14,12 @@ func _on_click() -> void:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
 #	await C.player.say("What a nice view")
-	R.goto_room("Test")
+	if R.Bedroom.state.sticky_note_read:
+		R.goto_room("Test")
+	else:
+		await C.player.say("I don't want to go outside right now.")
+
+	
 
 
 # Called when the hotspot is double-clicked
@@ -32,7 +37,7 @@ func _on_right_click() -> void:
 	#PopochiuUtils.e.command_fallback()
 	# Example: make the player face this hotspot and say a line:
 #	await C.player.face_clicked()
-	await C.player.say("Go outside and touch some grass maybe?")
+	await C.player.say("This leads outside.")
 
 
 # Called when the hotspot is middle clicked

@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://t72lqk3cdomd" path="res://game/rooms/outside_2/room_outside_2.gd" id="1_54v5v"]
 [ext_resource type="PackedScene" uid="uid://b3wfayiqtmuey" path="res://game/rooms/outside_2/props/background/prop_background.tscn" id="2_tyvfh"]
 [ext_resource type="PackedScene" uid="uid://dcy3txdawrj3w" path="res://game/rooms/outside_2/props/datacenter/prop_datacenter.tscn" id="3_cdy33"]
-[ext_resource type="Texture2D" uid="uid://7plmgffm1rfs" path="res://game/assets/placehoolder.png" id="4_4rrki"]
+[ext_resource type="Texture2D" uid="uid://beq8b5yalxs24" path="res://game/assets/powerlines_blue_dither.png" id="4_sr43a"]
 [ext_resource type="PackedScene" uid="uid://dw1js5forsr5a" path="res://game/rooms/outside_2/hotspots/left/hotspot_left.tscn" id="4_ug2qk"]
+[ext_resource type="PackedScene" uid="uid://dgvjifto4wdca" path="res://game/rooms/outside_2/props/powerlines/prop_powerlines.tscn" id="5_chpu1"]
+[ext_resource type="Texture2D" uid="uid://br633ysogf7w3" path="res://game/assets/Datacenter_building_dithered.png" id="6_0jejb"]
 
 [node name="RoomOutside2" type="Node2D" unique_id=1972906076]
 script = ExtResource("1_54v5v")
@@ -17,15 +19,24 @@ height = 200
 [node name="Props" type="Node2D" parent="." unique_id=609225681]
 
 [node name="Background" parent="Props" unique_id=1921255045 instance=ExtResource("2_tyvfh")]
-position = Vector2(72, 9)
+position = Vector2(126, 128)
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 look_at_point = Vector2(-0.90908813, 5.454544)
 
-[node name="Datacenter" parent="Props" unique_id=1120892275 instance=ExtResource("3_cdy33")]
+[node name="Powerlines" parent="Props" unique_id=308352997 instance=ExtResource("5_chpu1")]
 position = Vector2(160, 100)
-texture = ExtResource("4_4rrki")
+texture = ExtResource("4_sr43a")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+metadata/_edit_lock_ = true
+
+[node name="Datacenter" parent="Props" unique_id=1120892275 instance=ExtResource("3_cdy33")]
+position = Vector2(226, 130)
+input_pickable = true
+texture = ExtResource("6_0jejb")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+clickable = true
+interaction_polygon = PackedVector2Array(-68.7359, -11.52121, 25.884735, -20.857498, 94.46083, -3.8616562, 95.331345, 52.069008, 28.322174, 54.00242, -68.25712, 51.49968)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=777481841]
 
@@ -38,3 +49,4 @@ interaction_polygon = PackedVector2Array(-159.93295, -98.824326, -135.84175, -99
 [node name="Markers" type="Node2D" parent="." unique_id=1166105545]
 
 [node name="Characters" type="Node2D" parent="." unique_id=624756426]
+visible = false

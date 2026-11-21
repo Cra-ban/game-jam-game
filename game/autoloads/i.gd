@@ -2,14 +2,14 @@
 extends "res://addons/popochiu/engine/interfaces/i_inventory.gd"
 
 # classes ----
-const PIIRamSitck := preload("res://game/inventory_items/ram_sitck/inventory_item_ram_sitck.gd")
+const PIIRamStick := preload("res://game/inventory_items/ram_stick/inventory_item_ram_stick.gd")
 # ---- classes
 
 # nodes ----
-var RamSitck: PIIRamSitck : get = get_RamSitck
+var RamStick: PIIRamStick : get = get_RamStick
 # ---- nodes
 
 # functions ----
-func get_RamSitck() -> PIIRamSitck: return get_item_instance("RamSitck")
+func get_RamStick() -> PIIRamStick: return get_item_instance("RamStick")
 # ---- functions
 

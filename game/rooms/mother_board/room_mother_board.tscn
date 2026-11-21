@@ -2,7 +2,10 @@
 
 [ext_resource type="Script" uid="uid://coao0bxn5a84s" path="res://game/rooms/mother_board/room_mother_board.gd" id="1_anaal"]
 [ext_resource type="PackedScene" uid="uid://c3fnyilrhtt7m" path="res://game/rooms/mother_board/props/background/prop_background.tscn" id="2_mlh2m"]
+[ext_resource type="Texture2D" uid="uid://c0sh4f7h4o65m" path="res://game/assets/motherboard_dither.png" id="3_7n4ub"]
 [ext_resource type="PackedScene" uid="uid://bx0wbwg78tst0" path="res://game/rooms/mother_board/props/post_it/prop_post_it.tscn" id="3_mm6vm"]
+[ext_resource type="Texture2D" uid="uid://xbm1dd61itdt" path="res://game/assets/sticky_note_dithered.png" id="5_0g8e8"]
+[ext_resource type="PackedScene" uid="uid://tpb4av0oi5le" path="res://game/rooms/mother_board/hotspots/back/hotspot_back.tscn" id="5_ut3o3"]
 
 [node name="RoomMotherBoard" type="Node2D" unique_id=571736896]
 script = ExtResource("1_anaal")
@@ -16,18 +19,32 @@ height = 200
 
 [node name="Background" parent="Props" unique_id=629791743 instance=ExtResource("2_mlh2m")]
 position = Vector2(160, 100)
+texture = ExtResource("3_7n4ub")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+metadata/_edit_lock_ = true
 
 [node name="PostIt" parent="Props" unique_id=1590418797 instance=ExtResource("3_mm6vm")]
 position = Vector2(160, 100)
+input_pickable = true
+texture = ExtResource("5_0g8e8")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+clickable = true
+look_at_point = Vector2(0.79000854, 6.8466187)
+interaction_polygon = PackedVector2Array(44.781395, -34.949966, 103.60204, -34.752125, 106.371864, 22.881454, 43.594337, 23.870674)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=1448188749]
+
+[node name="Back" parent="Hotspots" unique_id=2128095840 instance=ExtResource("5_ut3o3")]
+position = Vector2(46, 165)
+description = "Go back"
+walk_to_point = Vector2(-29.301285, 30.457916)
+look_at_point = Vector2(-15.036194, 27.373566)
+interaction_polygon = PackedVector2Array(-55.10527, -171.59215, -5.9605255, -169.02635, -1.8552704, 40.736847, -47.921066, 40.223694)
 
 [node name="Regions" type="Node2D" parent="." unique_id=387638758]
 
 [node name="Markers" type="Node2D" parent="." unique_id=16304786]
 
 [node name="Characters" type="Node2D" parent="." unique_id=1335201950]
+visible = false

@@ -9,11 +9,15 @@ extends PopochiuProp
 # Called when the prop is clicked
 func _on_click() -> void:
 	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
+	#PopochiuUtils.e.command_fallback()
 	# Example: make the player walk to this prop, face it, then say a line:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
-#	await C.player.say("Not picking that up!")
+	await C.player.say("\"You weren't using enough of your RAM so I decided to steal it - Sam\"")
+	await C.player.say("...")
+	await C.player.say("WHAT?? I need to get that back.")
+	R.Bedroom.state.sticky_note_read = true
+	R.Bedroom.state.computer_checked = true
 
 
 # Called when the prop is double-clicked
@@ -26,10 +30,10 @@ func _on_double_click() -> void:
 # Called when the prop is right-clicked
 func _on_right_click() -> void:
 	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
+	#PopochiuUtils.e.command_fallback()
 	# Example: make the player face this prop and say a line:
 #	await C.player.face_clicked()
-#	await C.player.say("A deck of cards")
+	await C.player.say("There's a sticky note in here...")
 
 
 # When the prop is middle clicked

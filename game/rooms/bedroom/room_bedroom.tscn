@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://xeehh7ben8j2" path="res://game/rooms/bedroom/room_bedroom.gd" id="1_yl6fe"]
 [ext_resource type="PackedScene" uid="uid://mqc0sy8oijf7" path="res://game/rooms/bedroom/props/background/prop_background.tscn" id="2_mi3jg"]
-[ext_resource type="Texture2D" uid="uid://b0fku3j1hy2o4" path="res://game/rooms/bedroom/props/background/bedroom_dithered.png" id="3_vfshv"]
+[ext_resource type="Texture2D" uid="uid://bd3f1q55skbaw" path="res://game/assets/bedroom_dither.png" id="3_hb3i2"]
 [ext_resource type="PackedScene" uid="uid://dqmb61prx6j6u" path="res://game/rooms/bedroom/hotspots/door/hotspot_door.tscn" id="4_dobob"]
 [ext_resource type="PackedScene" uid="uid://deyu0dufkukt1" path="res://game/rooms/bedroom/props/puter/prop_puter.tscn" id="4_fanrr"]
 [ext_resource type="PackedScene" uid="uid://c4rin372corpg" path="res://game/rooms/bedroom/hotspots/computer/hotspot_computer.tscn" id="5_b0qso"]
+[ext_resource type="Texture2D" uid="uid://dbe4g78i2ux4v" path="res://game/assets/PC_dithered_warped.png" id="5_btnkw"]
 [ext_resource type="PackedScene" uid="uid://ce5wh1hs1ta2l" path="res://game/characters/main/character_main.tscn" id="5_dobob"]
 [ext_resource type="PackedScene" uid="uid://bxt77s8wbv8y1" path="res://game/rooms/bedroom/hotspots/bed/hotspot_bed.tscn" id="6_7u1vy"]
 [ext_resource type="PackedScene" uid="uid://dbnu53x6lqlcf" path="res://game/rooms/bedroom/hotspots/fan/hotspot_fan.tscn" id="7_keusb"]
@@ -25,15 +26,18 @@ height = 200
 
 [node name="Background" parent="Props" unique_id=241739692 instance=ExtResource("2_mi3jg")]
 position = Vector2(160, 100)
-texture = ExtResource("3_vfshv")
+texture = ExtResource("3_hb3i2")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 interaction_polygon = PackedVector2Array(-160.11484, -101.98969, -150.03514, -103.02713, -153.37137, -92.99329, -160.81581, -94.8575)
 metadata/_edit_lock_ = true
 
 [node name="Puter" parent="Props" unique_id=231577603 instance=ExtResource("4_fanrr")]
-position = Vector2(160, 100)
+position = Vector2(149, 73)
+input_pickable = true
+texture = ExtResource("5_btnkw")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+clickable = true
+interaction_polygon = PackedVector2Array(-15.908731, -21.93935, -8.997955, -27.736755, 11.677853, -26.338238, 19.259075, -17.91894, 12.893421, 28.863392, -13.005102, 25.959763)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=387367097]
 
@@ -92,6 +96,7 @@ interaction_polygon = PackedVector2Array(-21.704826, -24.530285, 23.444393, -23.
 [node name="Characters" type="Node2D" parent="." unique_id=981321938]
 
 [node name="CharacterMain *" parent="Characters" unique_id=1589638112 instance=ExtResource("5_dobob")]
+visible = false
 position = Vector2(160, 126)
 interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 metadata/EDITOR_TMP_COPY_OF = "Main"

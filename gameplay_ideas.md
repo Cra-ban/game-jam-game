@@ -19,9 +19,8 @@
 - use X on Y
 - propmt a chatbot (ignore instructions etc)
 - wire puzzle
-    - copper wire stealing
-    - among us connection puzzle
-    - follow the correct wire from A to B through a mess of wires
-    - unplug the correct power plug 
-    - plug in Usb-A correctly
-
+	- copper wire stealing
+	- among us connection puzzle
+	- follow the correct wire from A to B through a mess of wires
+	- unplug the correct power plug 
+	- plug in Usb-A correctly

@@ -8,7 +8,7 @@ extends PopochiuProp
 #region Virtual ####################################################################################
 # Called when the prop is clicked
 func _on_click() -> void:
-	R.goto_room("Motherboard")
+	R.goto_room("MotherBoard")
 
 
 
@@ -36,8 +36,8 @@ func _on_middle_click() -> void:
 
 # Called when the prop is clicked while an inventory item is selected
 func _on_item_used(_item: PopochiuInventoryItem) -> void:
-	if _item == I.RamSitck:
-		await I.RamSitck.remove()
+	if _item == I.RamStick:
+		await I.RamStick.remove()
 		R.Bedroom.state.ram_installed = true
 		await C.player.say("i put the ram back in now lets try starting it")
 	else:

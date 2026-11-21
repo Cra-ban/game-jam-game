@@ -4,10 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://c4hk5gnv2rmsy" path="res://game/rooms/test/props/background/prop_background.tscn" id="2_oxolr"]
 [ext_resource type="Texture2D" uid="uid://bef3hn8rhxa81" path="res://game/rooms/test/props/background/hills.png" id="3_61w3o"]
 [ext_resource type="PackedScene" uid="uid://dako5y6ospvf3" path="res://game/rooms/test/props/house/prop_house.tscn" id="4_pgxwu"]
-[ext_resource type="Texture2D" uid="uid://cea2w11u0db3c" path="res://game/assets/house_no_path.png" id="5_5jv0e"]
+[ext_resource type="Texture2D" uid="uid://u1abjjp16jb" path="res://game/assets/house_dithered.png" id="5_2mni4"]
 [ext_resource type="PackedScene" uid="uid://bov5wlrptsi4r" path="res://game/rooms/test/hotspots/right_side/hotspot_right_side.tscn" id="6_5jv0e"]
 [ext_resource type="PackedScene" uid="uid://c7r0nko4n5ed5" path="res://game/rooms/test/props/cow/prop_cow.tscn" id="6_v56lp"]
 [ext_resource type="Texture2D" uid="uid://cmeshgnghdn8j" path="res://game/assets/cow_dither.png" id="7_2mni4"]
+[ext_resource type="PackedScene" uid="uid://rmjnviejtnc5" path="res://game/rooms/test/props/sign/prop_sign.tscn" id="8_gixs1"]
+[ext_resource type="Texture2D" uid="uid://cgbx52w2x04hv" path="res://game/assets/wegweiser_dithered.png" id="9_2okqh"]
 
 [node name="RoomTest" type="Node2D" unique_id=915716085]
 script = ExtResource("1_u7p72")
@@ -28,7 +30,7 @@ metadata/_edit_lock_ = true
 
 [node name="House" parent="Props" unique_id=103080745 instance=ExtResource("4_pgxwu")]
 position = Vector2(54, 89)
-texture = ExtResource("5_5jv0e")
+texture = ExtResource("5_2mni4")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 baseline = 22
 interaction_polygon = PackedVector2Array(-34.029675, -33.66217, 42.791786, -33.61448, 43.506233, 21.9516, -34.037155, 22.063812)
@@ -40,6 +42,12 @@ texture = ExtResource("7_2mni4")
 obstacle_polygon = [Vector2(-20.802158, -14.436506), Vector2(-9.944653, -15.58639), Vector2(-8.269482, -8.550669), Vector2(19.908737, -8.405891), Vector2(22.88871, 5.8558083), Vector2(16, 16), Vector2(-10.081062, 15.329933), Vector2(-9.49794, 4.515671), Vector2(-20.665752, -4.7536125)]
 clickable = true
 interaction_polygon = PackedVector2Array(-19.929142, -14.568596, -9.162907, -15.474712, -8.523258, -8.202942, 20.487534, -8.437096, 22.88871, 5.8558083, 17.304802, 15.125092, -10.838074, 15.013412, -10.101467, 4.4058876, -17.538765, -1.6266251, -21.112465, -5.312004)
+
+[node name="Sign" parent="Props" unique_id=2011226444 instance=ExtResource("8_gixs1")]
+position = Vector2(225, 117)
+texture = ExtResource("9_2okqh")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(45.92135, 29.863964, 17.566454, 30.090229, 26.095676, 16.915005, 16.297281, 2.9508781, 70.58049, 2.919359, 85.03523, 17.26305, 72.20672, 30.854336, 57.917942, 30.902779, 58.288773, 67.22956, 45.932854, 67.03622)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=423333462]
 

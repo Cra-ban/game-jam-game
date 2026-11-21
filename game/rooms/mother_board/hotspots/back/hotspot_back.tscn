@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://tpb4av0oi5le"]
+
+[ext_resource type="Script" path="res://game/rooms/mother_board/hotspots/back/hotspot_back.gd" id="1_v6rhd"]
+
+[node name="Back" type="Area2D" unique_id=2128095840]
+script = ExtResource("1_v6rhd")
+script_name = "Back"
+description = "Back"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=922678709]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)

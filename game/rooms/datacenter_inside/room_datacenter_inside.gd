@@ -21,7 +21,9 @@ func _on_room_entered() -> void:
 # NOTE: this is NOT called when loading a saved game. Use [_on_restore_from_savegame] for that.
 func _on_room_transition_finished() -> void:
 	# You can use await E.queue([]) to run a sequence of actions here.
-	pass
+	if state.visited_first_time:
+		await C.player.say("Better find my RAM quick.")
+
 
 
 # Called before Popochiu unloads the room.

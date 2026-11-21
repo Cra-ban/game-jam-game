@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dgvjifto4wdca"]
+
+[ext_resource type="Script" path="res://game/rooms/outside_2/props/powerlines/prop_powerlines.gd" id="1_0lrcn"]
+
+[node name="Powerlines" type="Area2D" unique_id=308352997]
+input_pickable = false
+script = ExtResource("1_0lrcn")
+script_name = "Powerlines"
+description = "Powerlines"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1844122302]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1276433313]
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1847025295]
+visible = false
+modulate = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=1465225890]
+visible = false
+affect_navigation_mesh = true
+carve_navigation_mesh = true
