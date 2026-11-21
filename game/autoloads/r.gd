@@ -2,17 +2,17 @@
 extends "res://addons/popochiu/engine/interfaces/i_room.gd"
 
 # classes ----
-const PRHome := preload("res://game/rooms/home/room_home.gd")
-const PRHouse := preload("res://game/rooms/house/room_house.gd")
+const PRTest := preload("res://game/rooms/test/room_test.gd")
+const PRBedroom := preload("res://game/rooms/bedroom/room_bedroom.gd")
 # ---- classes
 
 # nodes ----
-var Home: PRHome : get = get_Home
-var House: PRHouse : get = get_House
+var Test: PRTest : get = get_Test
+var Bedroom: PRBedroom : get = get_Bedroom
 # ---- nodes
 
 # functions ----
-func get_Home() -> PRHome: return get_runtime_room("Home")
-func get_House() -> PRHouse: return get_runtime_room("House")
+func get_Test() -> PRTest: return get_runtime_room("Test")
+func get_Bedroom() -> PRBedroom: return get_runtime_room("Bedroom")
 # ---- functions
 

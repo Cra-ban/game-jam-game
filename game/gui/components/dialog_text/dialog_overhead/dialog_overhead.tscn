@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cvlwhdgyksbft"]
+[gd_scene format=3 uid="uid://cs3geno14hwps"]
 
-[ext_resource type="Theme" uid="uid://diwdb7d80et1q" path="res://game/gui/resources/gui_theme.tres" id="1_dovqc"]
-[ext_resource type="Script" uid="uid://bj255hbh0eh6e" path="res://game/gui/components/dialog_text/dialog_overhead/dialog_overhead_custom.gd" id="2_mqq0m"]
-[ext_resource type="Texture2D" uid="uid://fkc6u06sa6g5" path="res://game/gui/components/dialog_text/images/ico_continue.png" id="3_ufcrv"]
+[ext_resource type="Theme" uid="uid://c2v3sjt74htg8" path="res://game/gui/resources/gui_theme.tres" id="1_dovqc"]
+[ext_resource type="Script" uid="uid://obpdwcgqp7sa" path="res://game/gui/components/dialog_text/dialog_overhead/dialog_overhead_custom.gd" id="2_mqq0m"]
+[ext_resource type="Texture2D" uid="uid://dnugawmyvem6a" path="res://game/gui/components/dialog_text/images/ico_continue.png" id="3_ufcrv"]
 
 [node name="DialogOverhead" type="Control" unique_id=267692796 groups=["popochiu_gui_component"]]
 layout_mode = 3

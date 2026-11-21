@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bmg5jl8731tc8"]
+[gd_scene format=3 uid="uid://dii2she587q3"]
 
-[ext_resource type="FontFile" uid="uid://2grvydf3fr7w" path="res://game/gui/fonts/monkeyisland_1991.ttf" id="1_5ngxg"]
+[ext_resource type="FontFile" uid="uid://eq1sol3fomd4" path="res://game/gui/fonts/monkeyisland_1991.ttf" id="1_5ngxg"]
 
 [node name="DialogLine" type="RichTextLabel"]
 anchors_preset = 15

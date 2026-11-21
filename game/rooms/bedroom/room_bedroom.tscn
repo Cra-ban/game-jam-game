@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cockecyrydxvr"]
+
+[ext_resource type="Script" uid="uid://xeehh7ben8j2" path="res://game/rooms/bedroom/room_bedroom.gd" id="1_yl6fe"]
+[ext_resource type="PackedScene" uid="uid://mqc0sy8oijf7" path="res://game/rooms/bedroom/props/background/prop_background.tscn" id="2_mi3jg"]
+[ext_resource type="Texture2D" uid="uid://b0fku3j1hy2o4" path="res://game/rooms/bedroom/props/background/bedroom_dithered.png" id="3_vfshv"]
+[ext_resource type="PackedScene" uid="uid://dqmb61prx6j6u" path="res://game/rooms/bedroom/hotspots/door/hotspot_door.tscn" id="4_dobob"]
+[ext_resource type="PackedScene" uid="uid://c4rin372corpg" path="res://game/rooms/bedroom/hotspots/computer/hotspot_computer.tscn" id="5_b0qso"]
+[ext_resource type="PackedScene" uid="uid://ce5wh1hs1ta2l" path="res://game/characters/main/character_main.tscn" id="5_dobob"]
+
+[node name="RoomBedroom" type="Node2D" unique_id=773165945]
+script = ExtResource("1_yl6fe")
+script_name = "Bedroom"
+width = 320
+height = 200
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=1866453688]
+
+[node name="Props" type="Node2D" parent="." unique_id=1465362763]
+
+[node name="Background" parent="Props" unique_id=241739692 instance=ExtResource("2_mi3jg")]
+position = Vector2(160, 100)
+texture = ExtResource("3_vfshv")
+obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+interaction_polygon = PackedVector2Array(-160.11484, -101.98969, -150.03514, -103.02713, -153.37137, -92.99329, -160.81581, -94.8575)
+metadata/_edit_lock_ = true
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=387367097]
+
+[node name="Door" parent="Hotspots" unique_id=57010036 instance=ExtResource("4_dobob")]
+position = Vector2(33, 80)
+baseline = -53
+walk_to_point = Vector2(-124.39477, 0.3395996)
+look_at_point = Vector2(-135.87025, -22.089523)
+interaction_polygon = PackedVector2Array(-33.484173, -81.02717, 1.3531265, -80.91378, 3.9852448, 33.181152, -32.62772, 30.031563)
+
+[node name="Computer" parent="Hotspots" unique_id=1752166130 instance=ExtResource("5_b0qso")]
+position = Vector2(245, 45)
+baseline = 16
+walk_to_point = Vector2(-0.26600647, -1.359787)
+look_at_point = Vector2(1.7132568, -1.3400192)
+interaction_polygon = PackedVector2Array(-26.75403, -17.541407, 31.567001, -19.00409, 31.234451, 16.537956, -26.133802, 16.119896)
+
+[node name="Regions" type="Node2D" parent="." unique_id=786425560]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1197759094]
+
+[node name="Characters" type="Node2D" parent="." unique_id=981321938]
+
+[node name="CharacterMain *" parent="Characters" unique_id=1589638112 instance=ExtResource("5_dobob")]
+position = Vector2(160, 126)
+interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+metadata/EDITOR_TMP_COPY_OF = "Main"

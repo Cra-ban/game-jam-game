@@ -1,11 +1,11 @@
-[gd_resource type="Theme" format=3 uid="uid://diwdb7d80et1q"]
+[gd_resource type="Theme" format=3 uid="uid://c2v3sjt74htg8"]
 
-[ext_resource type="Texture2D" uid="uid://cyhw0br0jfqqx" path="res://addons/popochiu/engine/objects/gui/resources/images/check_button_checked_high_res.svg" id="1_f3v6j"]
-[ext_resource type="Texture2D" uid="uid://cv0ewu00btiwg" path="res://addons/popochiu/engine/objects/gui/resources/images/check_button_unchecked_high_res.svg" id="2_aqb6g"]
-[ext_resource type="Texture2D" uid="uid://b16pci5ujjluo" path="res://addons/popochiu/engine/objects/gui/resources/images/h_slider_grabber_high_res.svg" id="3_emke0"]
+[ext_resource type="Texture2D" uid="uid://pl1ch71kfj72" path="res://addons/popochiu/engine/objects/gui/resources/images/check_button_checked.png" id="1_f3v6j"]
+[ext_resource type="Texture2D" uid="uid://dukr75slqli45" path="res://addons/popochiu/engine/objects/gui/resources/images/check_button_unchecked.png" id="2_aqb6g"]
+[ext_resource type="Texture2D" uid="uid://cqxqfxobqltga" path="res://addons/popochiu/engine/objects/gui/resources/images/grabber.png" id="3_emke0"]
 [ext_resource type="Texture2D" uid="uid://d1ywqbehmtuv" path="res://addons/popochiu/engine/objects/gui/resources/images/down_arrow.png" id="4_13x2e"]
-[ext_resource type="Texture2D" uid="uid://bdwmcqfcc2a7o" path="res://addons/popochiu/engine/objects/gui/resources/images/radio_button.png" id="5_3v5ri"]
-[ext_resource type="FontFile" uid="uid://dub2a168drrc6" path="res://addons/popochiu/engine/objects/gui/fonts/open_sans_regular.ttf" id="6_d35rj"]
+[ext_resource type="Texture2D" uid="uid://dutcnd6vdqmye" path="res://addons/popochiu/engine/objects/gui/resources/images/radio_button.png" id="5_3v5ri"]
+[ext_resource type="FontFile" uid="uid://dm6h44ck2nm2b" path="res://addons/popochiu/engine/objects/gui/fonts/minecraftia-regular.ttf" id="6_d35rj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27bc1"]
 content_margin_left = 2.0
@@ -49,20 +49,12 @@ bg_color = Color(0, 0, 0, 0.705882)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntbs0"]
 bg_color = Color(0.698039, 0.698039, 0.698039, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtnox"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_qaoqm"]
-thickness = 16
+thickness = 4
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uj4y4"]
 bg_color = Color(0, 0, 0, 0.705882)
@@ -97,7 +89,7 @@ bg_color = Color(0, 0, 0, 0.705882)
 
 [resource]
 default_font = ExtResource("6_d35rj")
-default_font_size = 20
+default_font_size = 8
 Button/colors/font_color = Color(1, 1, 1, 1)
 Button/colors/font_disabled_color = Color(0.482353, 0.482353, 0.482353, 1)
 Button/colors/font_focus_color = Color(0.305882, 0.305882, 0.862745, 1)

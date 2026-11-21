@@ -1,9 +1,0 @@
-[gd_resource type="Resource" format=3 uid="uid://dhjcbucs462ps"]
-
-[ext_resource type="Script" path="res://game/rooms/home/room_home_state.gd" id="1_co6f2"]
-
-[resource]
-resource_name = "Home"
-script = ExtResource("1_co6f2")
-script_name = "Home"
-scene = "res://game/rooms/home/room_home.tscn"

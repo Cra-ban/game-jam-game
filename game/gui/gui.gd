@@ -1,5 +1,5 @@
 # @popochiu-docs-ignore-class
-extends "res://addons/popochiu/engine/objects/gui/templates/simple_click_high_res/simple_click_high_res_gui.gd"
+extends "res://addons/popochiu/engine/objects/gui/templates/simple_click/simple_click_gui.gd"
 
 
 #region Virtual ####################################################################################

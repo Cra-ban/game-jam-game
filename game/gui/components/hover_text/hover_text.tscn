@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://cawx1trmvmyjl"]
+[gd_scene format=3 uid="uid://cyeh8phegeg2m"]
 
-[ext_resource type="Theme" uid="uid://diwdb7d80et1q" path="res://game/gui/resources/gui_theme.tres" id="1_3qkco"]
-[ext_resource type="Script" uid="uid://c6aqslp2mrdur" path="res://game/gui/components/hover_text/hover_text_custom.gd" id="2_18lgb"]
+[ext_resource type="Theme" uid="uid://c2v3sjt74htg8" path="res://game/gui/resources/gui_theme.tres" id="1_3qkco"]
+[ext_resource type="Script" uid="uid://fq66sq0nl6rh" path="res://game/gui/components/hover_text/hover_text_custom.gd" id="2_18lgb"]
 
 [node name="HoverText" type="Control" groups=["popochiu_gui_component"]]
 layout_mode = 3

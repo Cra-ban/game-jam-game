@@ -1,9 +1,0 @@
-[gd_resource type="Resource" format=3 uid="uid://ca4uwa4u6dqfb"]
-
-[ext_resource type="Script" path="res://game/characters/main_1/character_main_1_state.gd" id="1_dtftu"]
-
-[resource]
-resource_name = "Main1"
-script = ExtResource("1_dtftu")
-script_name = "Main1"
-scene = "res://game/characters/main_1/character_main_1.tscn"
