@@ -13,6 +13,10 @@ func _on_click() -> void:
 	# Example: make the player walk to this hotspot, face it, then say something:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
+	if R.Bedroom.state.ram_installed:
+		await C.player.say("Finally i can use it again")
+		R.goto_room("Credits")
+		return
 	await C.player.say("I can't turn it on. :(")
 	R.Bedroom.state.computer_checked = true
 

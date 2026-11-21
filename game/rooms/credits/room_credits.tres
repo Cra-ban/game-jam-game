@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://jrfyhh8kwk8b"]
+
+[ext_resource type="Script" path="res://game/rooms/credits/room_credits_state.gd" id="1_fy0x0"]
+
+[resource]
+resource_name = "Credits"
+script = ExtResource("1_fy0x0")
+script_name = "Credits"
+scene = "res://game/rooms/credits/room_credits.tscn"

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cx3nr56nwrwso"]
+
+[ext_resource type="Script" uid="uid://j6k56dchbrmg" path="res://game/rooms/credits/room_credits.gd" id="1_d7yuw"]
+[ext_resource type="PackedScene" uid="uid://oummeqhtjo7w" path="res://game/rooms/credits/props/background/prop_background.tscn" id="2_u5w12"]
+
+[node name="RoomCredits" type="Node2D" unique_id=335077325]
+script = ExtResource("1_d7yuw")
+script_name = "Credits"
+width = 320
+height = 200
+
+[node name="WalkableAreas" type="Node2D" parent="." unique_id=1281027152]
+
+[node name="Props" type="Node2D" parent="." unique_id=913384681]
+
+[node name="Background" parent="Props" unique_id=419729070 instance=ExtResource("2_u5w12")]
+position = Vector2(160, 100)
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=1574529674]
+
+[node name="Regions" type="Node2D" parent="." unique_id=1754259165]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1622611476]
+
+[node name="Characters" type="Node2D" parent="." unique_id=2071238648]

@@ -8,6 +8,7 @@ const PRDatacenterEntrance := preload("res://game/rooms/datacenter_entrance/room
 const PRDatacenterInside := preload("res://game/rooms/datacenter_inside/room_datacenter_inside.gd")
 const PRMotherBoard := preload("res://game/rooms/mother_board/room_mother_board.gd")
 const PROutside2 := preload("res://game/rooms/outside_2/room_outside_2.gd")
+const PRCredits := preload("res://game/rooms/credits/room_credits.gd")
 # ---- classes
 
 # nodes ----
@@ -17,6 +18,7 @@ var DatacenterEntrance: PRDatacenterEntrance : get = get_DatacenterEntrance
 var DatacenterInside: PRDatacenterInside : get = get_DatacenterInside
 var MotherBoard: PRMotherBoard : get = get_MotherBoard
 var Outside2: PROutside2 : get = get_Outside2
+var Credits: PRCredits : get = get_Credits
 # ---- nodes
 
 # functions ----
@@ -26,4 +28,5 @@ func get_DatacenterEntrance() -> PRDatacenterEntrance: return get_runtime_room("
 func get_DatacenterInside() -> PRDatacenterInside: return get_runtime_room("DatacenterInside")
 func get_MotherBoard() -> PRMotherBoard: return get_runtime_room("MotherBoard")
 func get_Outside2() -> PROutside2: return get_runtime_room("Outside2")
+func get_Credits() -> PRCredits: return get_runtime_room("Credits")
 # ---- functions
