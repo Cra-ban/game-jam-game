@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://c4rin372corpg"]
 
-[ext_resource type="Script" path="res://game/rooms/bedroom/hotspots/computer/hotspot_computer.gd" id="1_sbckt"]
+[ext_resource type="Script" uid="uid://dg6x4kxn1228y" path="res://game/rooms/bedroom/hotspots/computer/hotspot_computer.gd" id="1_sbckt"]
 
 [node name="Computer" type="Area2D" unique_id=1752166130]
 script = ExtResource("1_sbckt")
 script_name = "Computer"
 description = "Computer"
 cursor = 1
-interaction_polygon = PackedVector2Array()
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1732210952]
 visible = false
