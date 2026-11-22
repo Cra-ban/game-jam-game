@@ -177,10 +177,12 @@ clickable = true
 interaction_polygon = PackedVector2Array(-68.7359, -11.52121, 25.884735, -20.857498, 94.46083, -3.8616562, 95.331345, 52.069008, 28.322174, 54.00242, -68.25712, 51.49968)
 
 [node name="fire" type="Sprite2D" parent="Props/Datacenter" unique_id=1151488173]
+texture_filter = 1
 position = Vector2(12, -45)
 texture = ExtResource("7_tivw6")
 
 [node name="explosion" type="AnimatedSprite2D" parent="Props/Datacenter" unique_id=1111538442]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ujav3")
 animation = &"new_animation"
 frame = 16

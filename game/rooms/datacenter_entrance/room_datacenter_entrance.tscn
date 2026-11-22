@@ -51,5 +51,6 @@ metadata/EDITOR_TMP_COPY_OF = "OutsideTerminal"
 
 [node name="break" type="Sprite2D" parent="Characters/CharacterOutsideTerminal *" unique_id=1029742043]
 visible = false
+texture_filter = 1
 position = Vector2(1, -1)
 texture = ExtResource("7_ycshj")

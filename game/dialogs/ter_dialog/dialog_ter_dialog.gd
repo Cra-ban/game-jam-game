@@ -18,7 +18,7 @@ func _on_start() -> void:
 
 func _option_selected(opt: PopochiuDialogOption) -> void:
 	match opt.id:
-		"TryPW":
+		"TryPw":
 			await D.say_selected()
 			await C.OutsideTerminal.say("INCORRECT PASSWORD TRY AGAIN")
 			await C.player.say("dammit")
@@ -30,7 +30,7 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 			if I.Screwdriver.in_inventory:
 				await C.player.say("Maybe something in my inventory might help")
 			else:
-				await C.player.say("I Might have something at home that could help me here")
+				await C.player.say("I might have something at home that could help me here")
 			
 			stop()
 			

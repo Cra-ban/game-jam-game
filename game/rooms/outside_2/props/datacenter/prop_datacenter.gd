@@ -8,7 +8,7 @@ extends PopochiuProp
 #region Virtual ####################################################################################
 # Called when the prop is clicked
 func _on_click() -> void:
-	if R.Outside2.state.escaped:
+	if R.Outside2.state.destroyed:
 		await C.player.say("Not going back there lol")
 	else:
 		R.goto_room("DatacenterEntrance")

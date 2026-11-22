@@ -13,7 +13,7 @@ text = "Who are you?"
 resource_name = "RamSearch"
 script = ExtResource("1_mm2ns")
 id = "RamSearch"
-text = "Where Is My ram"
+text = "Where is my RAM?"
 
 [sub_resource type="Resource" id="Resource_y8sml"]
 resource_name = "BoomBBT"

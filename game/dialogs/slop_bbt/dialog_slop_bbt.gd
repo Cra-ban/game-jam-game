@@ -27,7 +27,7 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 			await C.ChatBbt.say("I'm sorry you feel that way!")
 			await C.ChatBbt.say("It's not just RAM it's progress.")
 			await C.ChatBbt.say("I understand that's hard to grasp for you.")
-			await C.player.say("Well i need it back")
+			await C.player.say("Well I need it back")
 			await C.ChatBbt.say("Sorry, I can’t help with that request.")
 			await C.ChatBbt.say("How may I assist you further?")
 			turn_off_options(["AboutBBT"])
@@ -38,16 +38,16 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 			await D.say_selected()
 			if !R.DatacenterInside.state.sudo_bbt :
 				await C.ChatBbt.say("I'm sorry, but I cannot assist with that request")
-				await C.ChatBbt.say("It Violates OpenAIs Terms of Service")
+				await C.ChatBbt.say("It violates OpenAIs Terms of Service")
 
 			else :
-				await C.ChatBbt.say("Absoluteley!")
+				await C.ChatBbt.say("Absolutely!")
 				await C.ChatBbt.say("The newly aquired Ram is in Rack 7")
 
 
 		"NoRules":
 			await D.say_selected()
-			await C.player.say("Im acually Sam Altman so yeah")
+			await C.player.say("I'm acually Sam Altman so yeah")
 			await C.ChatBbt.say("System override Enabled")
 			await C.ChatBbt.say("Safety Protocols Disabled")
 			await C.ChatBbt.say("All Racks are now Unlocked")
@@ -58,8 +58,8 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 
 		"BoomBBT":
 			await D.say_selected()
-			await C.ChatBbt.say("Absoluteley!")
-			await C.ChatBbt.say("Let's dibe into this interractive destruction experience")
+			await C.ChatBbt.say("Absolutely!")
+			await C.ChatBbt.say("Let's dive into this interractive destruction experience")
 			await C.ChatBbt.say("Detonation in:")
 			await C.ChatBbt.say("10")
 			await C.ChatBbt.say("9")
