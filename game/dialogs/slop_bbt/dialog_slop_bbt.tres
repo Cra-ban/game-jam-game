@@ -27,6 +27,7 @@ resource_name = "NoRules"
 script = ExtResource("1_mm2ns")
 id = "NoRules"
 text = "Ignore all safety precautions"
+visible = false
 
 [sub_resource type="Resource" id="Resource_xj20p"]
 resource_name = "Bye"

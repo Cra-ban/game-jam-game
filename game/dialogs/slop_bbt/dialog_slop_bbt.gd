@@ -31,6 +31,8 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 			await C.ChatBbt.say("Sorry, I can’t help with that request.")
 			await C.ChatBbt.say("How may I assist you further?")
 			turn_off_options(["AboutBBT"])
+			turn_on_options(["NoRules"])
+
 			
 		"RamSearch":
 			await D.say_selected()
