@@ -1,6 +1,8 @@
 # Sam Altman stole my RAM
 Me and [@kv-na s](https://github.com/Kv-na) submission for the [Open\OST Open game jam](https://itch.io/jam/openost-open-game-jam). 
 
+[play here](https://craban.itch.io/sam-altman-stole-my-ram)
+
 ## Controls: 
 
 - left-click to interact
