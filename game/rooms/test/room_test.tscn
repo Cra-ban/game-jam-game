@@ -45,8 +45,10 @@ interaction_polygon = PackedVector2Array(-19.929142, -14.568596, -9.162907, -15.
 
 [node name="Sign" parent="Props" unique_id=2011226444 instance=ExtResource("8_gixs1")]
 position = Vector2(225, 117)
+input_pickable = true
 texture = ExtResource("9_2okqh")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
+clickable = true
 interaction_polygon = PackedVector2Array(45.92135, 29.863964, 17.566454, 30.090229, 26.095676, 16.915005, 16.297281, 2.9508781, 70.58049, 2.919359, 85.03523, 17.26305, 72.20672, 30.854336, 57.917942, 30.902779, 58.288773, 67.22956, 45.932854, 67.03622)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=423333462]
