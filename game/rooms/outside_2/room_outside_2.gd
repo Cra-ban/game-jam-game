@@ -13,7 +13,8 @@ var state: Data = load("res://game/rooms/outside_2/room_outside_2.tres")
 # Add any code you want to setup the stage before the room is shown to the player (e.g. setting
 # character position and facing direction, active walkable area, props visibility, etc.).
 func _on_room_entered() -> void:
-	pass
+	$Props/Datacenter/explosion.hide()
+	$Props/Datacenter/fire.visible = state.destroyed
 
 
 # Called after the room transition completes; the room is now visible.
@@ -23,6 +24,20 @@ func _on_room_transition_finished() -> void:
 	# You can use await E.queue([]) to run a sequence of actions here.
 	if state.visited_first_time:
 		await C.player.say("This datacenter looks like some kind of evil lair...")
+	if R.Outside2.state.escaped:
+		var explosion: AnimatedSprite2D = $Props/Datacenter/explosion
+		explosion.show()
+		explosion.play("new_animation")
+		$"Props/Datacenter/explosion sound".play()
+		$Props/Datacenter/fire.show()
+		state.destroyed = true 
+		await explosion.animation_finished
+		explosion.hide()
+		await C.player.say("That was close..")
+		await C.player.say("Atleast this eyesore is gone now")
+		R.Outside2.state.escaped = false
+
+
 
 # Called before Popochiu unloads the room.
 # At this point the screen is black, processing is disabled, and characters

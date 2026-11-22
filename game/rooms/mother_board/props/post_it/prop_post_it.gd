@@ -18,6 +18,7 @@ func _on_click() -> void:
 	await C.player.say("WHAT?? I need to get that back.")
 	R.Bedroom.state.sticky_note_read = true
 	R.Bedroom.state.computer_checked = true
+	
 
 
 # Called when the prop is double-clicked

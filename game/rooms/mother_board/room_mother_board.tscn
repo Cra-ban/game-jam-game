@@ -26,13 +26,14 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 metadata/_edit_lock_ = true
 
 [node name="PostIt" parent="Props" unique_id=1590418797 instance=ExtResource("3_mm6vm")]
-position = Vector2(160, 100)
+position = Vector2(238, 96)
 input_pickable = true
 texture = ExtResource("5_0g8e8")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 clickable = true
+baseline = 1
 look_at_point = Vector2(0.79000854, 6.8466187)
-interaction_polygon = PackedVector2Array(44.781395, -34.949966, 103.60204, -34.752125, 106.371864, 22.881454, 43.594337, 23.870674)
+interaction_polygon = PackedVector2Array(-31.556171, -27.74031, 26.41629, -27.966568, 29.610207, 29.242912, -33.167324, 28.959846)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=1448188749]
 

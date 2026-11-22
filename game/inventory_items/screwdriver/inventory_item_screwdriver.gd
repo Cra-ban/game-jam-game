@@ -1,9 +1,9 @@
 # @popochiu-docs-ignore-class
 extends PopochiuInventoryItem
 
-const Data := preload('inventory_item_ram_sitck_state.gd')
+const Data := preload('inventory_item_screwdriver_state.gd')
 
-var state: Data = load("res://game/inventory_items/ram_sitck/inventory_item_ram_sitck.tres")
+var state: Data = load("res://game/inventory_items/screwdriver/inventory_item_screwdriver.tres")
 
 
 #region Virtual ####################################################################################

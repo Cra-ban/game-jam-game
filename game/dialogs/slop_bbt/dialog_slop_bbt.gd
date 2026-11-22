@@ -56,11 +56,17 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 
 		"BoomBBT":
 			await D.say_selected()
-			if !R.DatacenterInside.state.sudo_bbt :
-				await C.ChatBbt.say("Yes! I want my toy car!")
-			else :
-				await C.ChatBbt.say("Yes! I want my toy car!")
-				stop()
+			await C.ChatBbt.say("Absoluteley!")
+			await C.ChatBbt.say("Let's dibe into this interractive destruction experience")
+			await C.ChatBbt.say("Detonation in:")
+			await C.ChatBbt.say("10")
+			await C.ChatBbt.say("9")
+			await C.ChatBbt.say("8")
+			await C.ChatBbt.say("7")
+			await C.player.say("Lets get out of here")
+			R.Outside2.state.escaped = true
+			R.goto_room("Outside2")
+			stop()
 				
 		"Bye":
 			await D.say_selected()
