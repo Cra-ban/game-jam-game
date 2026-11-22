@@ -8,8 +8,10 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the hotspot is clicked
 func _on_click() -> void:
-	if R.Bedroom.state.computer_checked:
+	if R.Bedroom.state.sticky_note_read:
 		await C.player.say("I dont need sleep, I need RAM.")
+	elif R.Bedroom.state.computer_checked:
+			await C.player.say("I don't need sleep, I want to figure out what's wrong with my Computer first.")
 	else:
 		await C.player.say("Let me Check my PC before i lie down.")
 

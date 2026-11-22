@@ -4,6 +4,7 @@ extends PopochiuRoomData
 
 var computer_checked := false
 var sticky_note_read := false
+var ram_obtained := false
 var ram_installed := false
 # By default only Godot's built-in types are saved/loaded automatically.
 # Use `save_custom` and `load_custom` to handle custom data types.

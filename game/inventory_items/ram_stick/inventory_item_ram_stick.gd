@@ -38,6 +38,7 @@ func _on_item_used(_item: PopochiuInventoryItem) -> void:
 func _on_added_to_inventory() -> void:
 	# Replace the call to `super()` to implement custom behavior.
 	# Calling `super()` preserves default behavior as well.
+	R.Bedroom.state.ram_obtained = true
 	super()
 
 

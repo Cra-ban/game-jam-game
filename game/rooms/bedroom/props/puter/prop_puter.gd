@@ -8,8 +8,13 @@ extends PopochiuProp
 #region Virtual ####################################################################################
 # Called when the prop is clicked
 func _on_click() -> void:
-	R.goto_room("MotherBoard")
-
+	if not R.Bedroom.state.ram_obtained:
+		R.goto_room("MotherBoard")
+	elif not R.Bedroom.state.ram_installed:
+		await C.player.say("I can fix it now.")
+	else:
+		await C.player.say("It should work now.")
+	
 
 
 # Called when the prop is double-clicked

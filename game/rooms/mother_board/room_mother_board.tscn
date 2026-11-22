@@ -37,10 +37,9 @@ interaction_polygon = PackedVector2Array(44.781395, -34.949966, 103.60204, -34.7
 
 [node name="Back" parent="Hotspots" unique_id=2128095840 instance=ExtResource("5_ut3o3")]
 position = Vector2(46, 165)
-description = "Go back"
 walk_to_point = Vector2(-29.301285, 30.457916)
 look_at_point = Vector2(-15.036194, 27.373566)
-interaction_polygon = PackedVector2Array(-55.10527, -171.59215, -5.9605255, -169.02635, -1.8552704, 40.736847, -47.921066, 40.223694)
+interaction_polygon = PackedVector2Array(-47.503315, -2.283493, 275.28503, -6.181244, 274.8134, 36.612778, -47.57202, 37.50653)
 
 [node name="Regions" type="Node2D" parent="." unique_id=387638758]
 
