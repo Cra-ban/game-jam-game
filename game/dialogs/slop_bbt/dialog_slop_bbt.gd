@@ -42,7 +42,7 @@ func _option_selected(opt: PopochiuDialogOption) -> void:
 
 			else :
 				await C.ChatBbt.say("Absoluteley!")
-				await C.ChatBbt.say("The newly aquired Ram is in Rack 5")
+				await C.ChatBbt.say("The newly aquired Ram is in Rack 7")
 
 
 		"NoRules":

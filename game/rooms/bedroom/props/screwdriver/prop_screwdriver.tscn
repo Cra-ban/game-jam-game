@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dr1r2bfr6ft3e"]
+
+[ext_resource type="Script" path="res://game/rooms/bedroom/props/screwdriver/prop_screwdriver.gd" id="1_7nldh"]
+
+[node name="Screwdriver" type="Area2D" unique_id=2069515260]
+input_pickable = false
+script = ExtResource("1_7nldh")
+script_name = "Screwdriver"
+description = "Screwdriver"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1716101398]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=107622149]
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1072875818]
+visible = false
+modulate = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=502257250]
+visible = false
+affect_navigation_mesh = true
+carve_navigation_mesh = true

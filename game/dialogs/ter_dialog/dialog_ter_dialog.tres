@@ -1,0 +1,22 @@
+[gd_resource type="Resource" format=3 uid="uid://biu6emm2rjwt7"]
+
+[ext_resource type="Script" uid="uid://brxefo54wpm32" path="res://addons/popochiu/engine/objects/dialog/popochiu_dialog_option.gd" id="1_uptri"]
+[ext_resource type="Script" uid="uid://drttibos6g71s" path="res://game/dialogs/ter_dialog/dialog_ter_dialog.gd" id="2_qbbqq"]
+
+[sub_resource type="Resource" id="Resource_uptri"]
+resource_name = "TryPw"
+script = ExtResource("1_uptri")
+id = "TryPw"
+text = "Try entering a random password"
+
+[sub_resource type="Resource" id="Resource_qbbqq"]
+resource_name = "Leave"
+script = ExtResource("1_uptri")
+id = "Leave"
+text = "Leave"
+
+[resource]
+resource_name = "TerDialog"
+script = ExtResource("2_qbbqq")
+script_name = "TerDialog"
+options = Array[ExtResource("1_uptri")]([SubResource("Resource_uptri"), SubResource("Resource_qbbqq")])

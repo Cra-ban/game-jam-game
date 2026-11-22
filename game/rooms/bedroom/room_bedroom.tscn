@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dbe4g78i2ux4v" path="res://game/assets/PC_dithered_warped.png" id="5_btnkw"]
 [ext_resource type="PackedScene" uid="uid://ce5wh1hs1ta2l" path="res://game/characters/main/character_main.tscn" id="5_dobob"]
 [ext_resource type="PackedScene" uid="uid://bxt77s8wbv8y1" path="res://game/rooms/bedroom/hotspots/bed/hotspot_bed.tscn" id="6_7u1vy"]
+[ext_resource type="PackedScene" uid="uid://dr1r2bfr6ft3e" path="res://game/rooms/bedroom/props/screwdriver/prop_screwdriver.tscn" id="6_btnkw"]
+[ext_resource type="Texture2D" uid="uid://uxl5nn4vkktq" path="res://game/assets/screwdriver_dithered.png" id="7_elvl6"]
 [ext_resource type="PackedScene" uid="uid://dbnu53x6lqlcf" path="res://game/rooms/bedroom/hotspots/fan/hotspot_fan.tscn" id="7_keusb"]
 [ext_resource type="PackedScene" uid="uid://5udecbthvddy" path="res://game/rooms/bedroom/hotspots/drawer_1/hotspot_drawer_1.tscn" id="8_l3jsk"]
 [ext_resource type="PackedScene" uid="uid://ufb6gmae60y0" path="res://game/rooms/bedroom/hotspots/drawer_2/hotspot_drawer_2.tscn" id="9_ncic5"]
@@ -38,6 +40,16 @@ texture = ExtResource("5_btnkw")
 obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
 clickable = true
 interaction_polygon = PackedVector2Array(-15.908731, -21.93935, -8.997955, -27.736755, 11.677853, -26.338238, 19.259075, -17.91894, 12.893421, 28.863392, -13.005102, 25.959763)
+
+[node name="Screwdriver" parent="Props" unique_id=2069515260 instance=ExtResource("6_btnkw")]
+visible = false
+position = Vector2(298, 52)
+input_pickable = true
+texture = ExtResource("7_elvl6")
+obstacle_polygon = [Vector2(-16, -16), Vector2(-0.0928154, -7.7693253), Vector2(23.002216, 13.665924), Vector2(3.246151, 6.077221), Vector2(-6.0494804, 4.206791)]
+clickable = true
+look_at_point = Vector2(-3.5473022, -1.5130844)
+interaction_polygon = PackedVector2Array(-24.744095, -14.561729, -17.637657, -13.700972, 7.875725, 0.93460083, 0.94387054, -4.874937, 22.164421, 13.202286, 3.8603783, 8.534138, -1.1895599, 5.7348595, -23.657106, -6.9444466)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=387367097]
 

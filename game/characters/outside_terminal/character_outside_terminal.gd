@@ -18,7 +18,7 @@ func _on_room_set() -> void:
 # Called when the character is clicked
 func _on_click() -> void:
 	# Replace the call to E.command_fallback() with your own logic.
-	E.command_fallback()
+	D.TerDialog.start()
 	# Example: make the player walk to this character, face them, then say a line.
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
@@ -52,11 +52,16 @@ func _on_middle_click() -> void:
 
 # Called when the character is clicked while an inventory item is selected
 func _on_item_used(_item: PopochiuInventoryItem) -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	E.command_fallback()
-	# Example: if the player uses a Key on this character, make the player say something.
+	if _item == I.Screwdriver:
+		await I.Screwdriver.remove()
+		R.DatacenterEntrance.state.door_open = true
+		$break.show()
+		await C.player.say("That should do the trick")
+	else:
+		PopochiuUtils.e.command_fallback()
+	# Example: if the Key is used on this prop, make the player speak.
 #	if _item == I.Key:
-#		await C.player.say("I don't want to give my key away!")
+#		await C.player.say("This stuff has no lock!")
 
 
 # Override this to alter the idle animation or hook custom logic to it. 

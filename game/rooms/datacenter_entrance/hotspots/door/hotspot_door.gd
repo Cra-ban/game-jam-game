@@ -9,7 +9,12 @@ extends PopochiuHotspot
 # When the hotspot is clicked
 func _on_click() -> void:
 	#if puzzle is solved allow people in else no
+	if R.DatacenterEntrance.state.door_open:
 		R.goto_room("DatacenterInside")
+	else:
+		await C.player.say("Its Locked I need to hack the login terminal somehow")
+
+		
 
 	
 

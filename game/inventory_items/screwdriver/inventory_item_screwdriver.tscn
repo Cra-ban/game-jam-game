@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://bm4usgt6mnj5y"]
 
-[ext_resource type="Script" path="res://game/inventory_items/screwdriver/inventory_item_screwdriver.gd" id="1_nojtl"]
+[ext_resource type="Texture2D" uid="uid://uxl5nn4vkktq" path="res://game/assets/screwdriver_dithered.png" id="1_ilt84"]
+[ext_resource type="Script" uid="uid://dxx3dth42rqbo" path="res://game/inventory_items/screwdriver/inventory_item_screwdriver.gd" id="1_nojtl"]
 
 [node name="ItemScrewdriver" type="TextureRect" unique_id=1415211024]
 texture_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 4
 mouse_filter = 0
+texture = ExtResource("1_ilt84")
 stretch_mode = 5
 script = ExtResource("1_nojtl")
 script_name = "Screwdriver"

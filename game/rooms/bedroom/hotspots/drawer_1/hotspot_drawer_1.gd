@@ -8,7 +8,8 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the hotspot is clicked
 func _on_click() -> void:
-	await C.player.say("i found my OBJECT")
+	await C.player.say("i found my Screwdriver")
+	R.get_prop("Screwdriver").enable()
 
 
 

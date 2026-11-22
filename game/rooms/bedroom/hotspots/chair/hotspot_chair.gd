@@ -8,8 +8,7 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the hotspot is clicked
 func _on_click() -> void:
-	# Replace the call to E.command_fallback() with your own logic.
-	PopochiuUtils.e.command_fallback()
+	await C.player.say("No time to sit, I need to get my RAM back")
 	# Example: make the player walk to this hotspot, face it, then say something:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
