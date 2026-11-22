@@ -19,8 +19,6 @@ func _on_click() -> void:
 
 
 
-	
-
 # Called when the prop is double-clicked
 func _on_double_click() -> void:
 	# Replace the call to E.command_fallback() with your code.

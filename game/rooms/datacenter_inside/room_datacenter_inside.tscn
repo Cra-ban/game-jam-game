@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dmko34njpeb0n" path="res://game/rooms/datacenter_inside/props/ram_stick/prop_ram_stick.tscn" id="3_jn7th"]
 [ext_resource type="Texture2D" uid="uid://bn2fn1e5qv8sd" path="res://game/assets/ramdither.png" id="4_08gqr"]
 [ext_resource type="PackedScene" uid="uid://x5s2quysooiu" path="res://game/rooms/datacenter_inside/hotspots/back/hotspot_back.tscn" id="5_weauc"]
+[ext_resource type="Texture2D" uid="uid://bre1af14tpx7f" path="res://game/assets/down.png" id="7_hj3jx"]
 [ext_resource type="PackedScene" uid="uid://b547kb78seqk2" path="res://game/characters/chat_bbt/character_chat_bbt.tscn" id="7_s1hor"]
 [ext_resource type="PackedScene" uid="uid://jovywayoxjr2" path="res://game/rooms/datacenter_inside/hotspots/rack_1/hotspot_rack_1.tscn" id="7_x0wvq"]
 [ext_resource type="PackedScene" uid="uid://f5hkje6sbty3" path="res://game/rooms/datacenter_inside/hotspots/rack_2/hotspot_rack_2.tscn" id="8_ju8w2"]
@@ -46,6 +47,10 @@ position = Vector2(166, 168)
 walk_to_point = Vector2(33.10199, 14.03775)
 look_at_point = Vector2(20.842773, 15.883667)
 interaction_polygon = PackedVector2Array(-162.26292, -8.274445, 150.75162, -4.945526, 149.84451, 28.143951, -165.36754, 30.006714)
+
+[node name="Sprite2D" type="Sprite2D" parent="Hotspots/Back" unique_id=14844051]
+position = Vector2(-1, 19)
+texture = ExtResource("7_hj3jx")
 
 [node name="Rack1" parent="Hotspots" unique_id=917995617 instance=ExtResource("7_x0wvq")]
 position = Vector2(12, 14)

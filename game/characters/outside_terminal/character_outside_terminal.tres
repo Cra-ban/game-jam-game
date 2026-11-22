@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://dsv380tbn2ada"]
+
+[ext_resource type="Script" path="res://game/characters/outside_terminal/character_outside_terminal_state.gd" id="1_ve8mw"]
+
+[resource]
+resource_name = "OutsideTerminal"
+script = ExtResource("1_ve8mw")
+script_name = "OutsideTerminal"
+scene = "res://game/characters/outside_terminal/character_outside_terminal.tscn"

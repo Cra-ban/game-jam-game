@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bx0wbwg78tst0" path="res://game/rooms/mother_board/props/post_it/prop_post_it.tscn" id="3_mm6vm"]
 [ext_resource type="Texture2D" uid="uid://xbm1dd61itdt" path="res://game/assets/sticky_note_dithered.png" id="5_0g8e8"]
 [ext_resource type="PackedScene" uid="uid://tpb4av0oi5le" path="res://game/rooms/mother_board/hotspots/back/hotspot_back.tscn" id="5_ut3o3"]
+[ext_resource type="Texture2D" uid="uid://bre1af14tpx7f" path="res://game/assets/down.png" id="7_i2yvo"]
 
 [node name="RoomMotherBoard" type="Node2D" unique_id=571736896]
 script = ExtResource("1_anaal")
@@ -40,6 +41,10 @@ position = Vector2(46, 165)
 walk_to_point = Vector2(-29.301285, 30.457916)
 look_at_point = Vector2(-15.036194, 27.373566)
 interaction_polygon = PackedVector2Array(-47.503315, -2.283493, 275.28503, -6.181244, 274.8134, 36.612778, -47.57202, 37.50653)
+
+[node name="Sprite2D" type="Sprite2D" parent="Hotspots/Back" unique_id=1544906572]
+position = Vector2(115, 24)
+texture = ExtResource("7_i2yvo")
 
 [node name="Regions" type="Node2D" parent="." unique_id=387638758]
 

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cx7wv3rpt0wuw"]
+
+[ext_resource type="Script" uid="uid://1rd6jbcmwspx" path="res://game/characters/outside_terminal/character_outside_terminal.gd" id="1_k6jww"]
+[ext_resource type="Texture2D" uid="uid://b3t1k3r8vmxpj" path="res://game/assets/termout.png" id="2_npmei"]
+
+[node name="CharacterOutsideTerminal" type="Area2D" unique_id=223605817]
+script = ExtResource("1_k6jww")
+text_color = Color(6.8345666e-06, 0.82452804, 0.16126221, 1)
+script_name = "OutsideTerminal"
+description = "Outside Terminal"
+cursor = 8
+interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="." unique_id=423326611]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1242391935]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790967837]
+texture_filter = 1
+texture = ExtResource("2_npmei")
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=416753228]
+visible = false
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=1855462046]
+visible = false
+vertices = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
