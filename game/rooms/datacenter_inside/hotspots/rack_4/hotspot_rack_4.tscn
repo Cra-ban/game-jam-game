@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bl1v4rmgoaxto"]
+
+[ext_resource type="Script" path="res://game/rooms/datacenter_inside/hotspots/rack_4/hotspot_rack_4.gd" id="1_uhu1m"]
+
+[node name="Rack4" type="Area2D" unique_id=1174069182]
+script = ExtResource("1_uhu1m")
+script_name = "Rack4"
+description = "Rack 4"
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=1030713625]
+visible = false
+modulate = Color(1, 0, 1, 1)
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)

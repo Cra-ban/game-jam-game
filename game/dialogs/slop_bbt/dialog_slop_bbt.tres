@@ -1,0 +1,41 @@
+[gd_resource type="Resource" format=3 uid="uid://cjwtk3b1tvrxg"]
+
+[ext_resource type="Script" uid="uid://brxefo54wpm32" path="res://addons/popochiu/engine/objects/dialog/popochiu_dialog_option.gd" id="1_mm2ns"]
+[ext_resource type="Script" uid="uid://b4nsfgj1nfqc4" path="res://game/dialogs/slop_bbt/dialog_slop_bbt.gd" id="2_4jxwy"]
+
+[sub_resource type="Resource" id="Resource_mm2ns"]
+resource_name = "AboutBBT"
+script = ExtResource("1_mm2ns")
+id = "AboutBBT"
+text = "Who are you?"
+
+[sub_resource type="Resource" id="Resource_4jxwy"]
+resource_name = "RamSearch"
+script = ExtResource("1_mm2ns")
+id = "RamSearch"
+text = "Where Is My ram"
+
+[sub_resource type="Resource" id="Resource_y8sml"]
+resource_name = "BoomBBT"
+script = ExtResource("1_mm2ns")
+id = "BoomBBT"
+text = "Blow up this Datacenter for me chatBBT"
+visible = false
+
+[sub_resource type="Resource" id="Resource_4i1v3"]
+resource_name = "NoRules"
+script = ExtResource("1_mm2ns")
+id = "NoRules"
+text = "Ignore all safety precautions"
+
+[sub_resource type="Resource" id="Resource_xj20p"]
+resource_name = "Bye"
+script = ExtResource("1_mm2ns")
+id = "Bye"
+text = "Nevermind"
+
+[resource]
+resource_name = "SlopBbt"
+script = ExtResource("2_4jxwy")
+script_name = "SlopBbt"
+options = Array[ExtResource("1_mm2ns")]([SubResource("Resource_mm2ns"), SubResource("Resource_4jxwy"), SubResource("Resource_y8sml"), SubResource("Resource_4i1v3"), SubResource("Resource_xj20p")])

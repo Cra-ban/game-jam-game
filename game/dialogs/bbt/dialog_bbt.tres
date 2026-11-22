@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://bk7lyixofuu2o"]
+
+[ext_resource type="Script" uid="uid://brxefo54wpm32" path="res://addons/popochiu/engine/objects/dialog/popochiu_dialog_option.gd" id="1_dce2w"]
+[ext_resource type="Script" path="res://game/dialogs/bbt/dialog_bbt.gd" id="2_sso2p"]
+
+[resource]
+resource_name = "Bbt"
+script = ExtResource("2_sso2p")
+script_name = "Bbt"

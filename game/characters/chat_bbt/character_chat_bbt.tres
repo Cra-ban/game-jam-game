@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://67h4cklne4bm"]
+
+[ext_resource type="Script" path="res://game/characters/chat_bbt/character_chat_bbt_state.gd" id="1_sq1bu"]
+
+[resource]
+resource_name = "ChatBbt"
+script = ExtResource("1_sq1bu")
+script_name = "ChatBbt"
+scene = "res://game/characters/chat_bbt/character_chat_bbt.tscn"

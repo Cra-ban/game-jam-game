@@ -6,6 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://dmko34njpeb0n" path="res://game/rooms/datacenter_inside/props/ram_stick/prop_ram_stick.tscn" id="3_jn7th"]
 [ext_resource type="Texture2D" uid="uid://bn2fn1e5qv8sd" path="res://game/assets/ramdither.png" id="4_08gqr"]
 [ext_resource type="PackedScene" uid="uid://x5s2quysooiu" path="res://game/rooms/datacenter_inside/hotspots/back/hotspot_back.tscn" id="5_weauc"]
+[ext_resource type="PackedScene" uid="uid://b547kb78seqk2" path="res://game/characters/chat_bbt/character_chat_bbt.tscn" id="7_s1hor"]
+[ext_resource type="PackedScene" uid="uid://jovywayoxjr2" path="res://game/rooms/datacenter_inside/hotspots/rack_1/hotspot_rack_1.tscn" id="7_x0wvq"]
+[ext_resource type="PackedScene" uid="uid://f5hkje6sbty3" path="res://game/rooms/datacenter_inside/hotspots/rack_2/hotspot_rack_2.tscn" id="8_ju8w2"]
+[ext_resource type="PackedScene" uid="uid://bgsvh23rdh4cb" path="res://game/rooms/datacenter_inside/hotspots/rack_3/hotspot_rack_3.tscn" id="9_ry5ls"]
+[ext_resource type="PackedScene" uid="uid://bl1v4rmgoaxto" path="res://game/rooms/datacenter_inside/hotspots/rack_4/hotspot_rack_4.tscn" id="10_aw0m8"]
+[ext_resource type="PackedScene" uid="uid://cseduxrve1dax" path="res://game/rooms/datacenter_inside/hotspots/rack_5/hotspot_rack_5.tscn" id="11_ghupk"]
+[ext_resource type="PackedScene" uid="uid://dwsxhyvdi58a6" path="res://game/rooms/datacenter_inside/hotspots/rack_6/hotspot_rack_6.tscn" id="12_vu87m"]
+[ext_resource type="PackedScene" uid="uid://dxbgyre0x7h8f" path="res://game/rooms/datacenter_inside/hotspots/rack_7/hotspot_rack_7.tscn" id="13_1gx76"]
+[ext_resource type="PackedScene" uid="uid://c13a87hq2og4g" path="res://game/rooms/datacenter_inside/hotspots/rack_8/hotspot_rack_8.tscn" id="14_4rrn2"]
 
 [node name="RoomDatacenterInside" type="Node2D" unique_id=2062665031]
 script = ExtResource("1_6vwyu")
@@ -24,10 +33,11 @@ obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector
 interaction_polygon = PackedVector2Array(-29.161573, 6.91827, 17.540352, -18.080873, 26.14479, -4.295351, 28.756187, 17.13496, -24.296875, 17.67548)
 
 [node name="RamStick" parent="Props" unique_id=1519793265 instance=ExtResource("3_jn7th")]
-position = Vector2(160, 100)
+visible = false
+position = Vector2(161, 140)
 texture = ExtResource("4_08gqr")
-obstacle_polygon = [Vector2(-16, -16), Vector2(16, -16), Vector2(16, 16), Vector2(-16, 16)]
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+obstacle_polygon = [Vector2(-28.893745, 6.741722), Vector2(16, -16), Vector2(25.407856, -4.97513), Vector2(28.55515, 6.395733), Vector2(27.742939, 16.548286), Vector2(16, 16), Vector2(-22.700687, 16.406105)]
+interaction_polygon = PackedVector2Array(17.076275, -17.48238, 25.509388, -5.279705, 28.656673, 5.989628, 28.650188, 17.685429, -23.425934, 16.954388, -28.751717, 7.532875)
 
 [node name="Hotspots" type="Node2D" parent="." unique_id=2078656110]
 
@@ -37,9 +47,52 @@ walk_to_point = Vector2(33.10199, 14.03775)
 look_at_point = Vector2(20.842773, 15.883667)
 interaction_polygon = PackedVector2Array(-162.26292, -8.274445, 150.75162, -4.945526, 149.84451, 28.143951, -165.36754, 30.006714)
 
+[node name="Rack1" parent="Hotspots" unique_id=917995617 instance=ExtResource("7_x0wvq")]
+position = Vector2(12, 14)
+walk_to_point = Vector2(-2.077057, 14.1755905)
+look_at_point = Vector2(5.3598022, 15.371384)
+interaction_polygon = PackedVector2Array(-12, -12, 37.83139, -12.385542, 32.677856, 10.964479, 28.822418, 44.89228, 32.292313, 122.38646, 44.000076, 187.8077, -11.614456, 187.8077)
+
+[node name="Rack2" parent="Hotspots" unique_id=774092085 instance=ExtResource("8_ju8w2")]
+position = Vector2(306, 188)
+baseline = 11
+look_at_point = Vector2(3.4698944, 3.0843506)
+interaction_polygon = PackedVector2Array(-36.674774, -187.0366, 12.771088, -187.8077, 13.542175, 12, -34.74704, 10.843369, -29.610626, -36.191788, -29.225067, -107.51728)
+
+[node name="Rack3" parent="Hotspots" unique_id=763511462 instance=ExtResource("9_ry5ls")]
+position = Vector2(81, 184)
+walk_to_point = Vector2(-10.409653, 6.168686)
+look_at_point = Vector2(-9.63855, -2.6988068)
+interaction_polygon = PackedVector2Array(-26.746552, -87.31273, 6.2067184, -86.78608, 5.8126984, -42.448753, 13.430695, 15.423466, -13.040508, 15.567448, -21.927254, -28.244987)
+
+[node name="Rack4" parent="Hotspots" unique_id=1174069182 instance=ExtResource("10_aw0m8")]
+position = Vector2(246, 188)
+look_at_point = Vector2(0.14868164, 2.8242493)
+interaction_polygon = PackedVector2Array(-7.3792267, -41.873558, -7.695984, -123.315056, -13.489273, -187.8312, 11.949249, -187.6196, 18.37381, -149.64818, 19.690475, -88.02869, 16.267166, -25.092514, 12, 12, -12, 12)
+
+[node name="Rack5" parent="Hotspots" unique_id=558993239 instance=ExtResource("11_ghupk")]
+position = Vector2(111, 183)
+look_at_point = Vector2(-4.5819244, -2.2139893)
+interaction_polygon = PackedVector2Array(-14.811085, -181.2751, -3.071228, -170.07272, -4.208435, -141.65549, -6.007015, -87.877716, -0.97097015, -19.891129, 1.4095078, -4.6794853, -10.037903, 14.943146, -16.095455, -27.886665, -19.496437, -77.08621, -18.777004, -118.63357, -18.597137, -148.13039)
+
+[node name="Rack6" parent="Hotspots" unique_id=2094393017 instance=ExtResource("12_vu87m")]
+position = Vector2(215, 186)
+interaction_polygon = PackedVector2Array(2.406479, -25.178017, 4.1760025, -54.73551, 3.2138824, -117.8293, 0.38471985, -174.63048, 10.613274, -191.17029, 16.489258, -130.01653, 18.482101, -77.438, 14.748215, -15.543648, 12, 12, 2.8531876, -2.0714436)
+
+[node name="Rack7" parent="Hotspots" unique_id=1228611167 instance=ExtResource("13_1gx76")]
+position = Vector2(127, 160)
+interaction_polygon = PackedVector2Array(-16.13675, -49.77034, -16.350716, -96.94713, -15.45142, -138.31465, -7.537636, -129.14186, -8.976505, -91.91111, -6.705307, -21.172806, -5.626156, 3.7264938, -12, 12)
+
+[node name="Rack8" parent="Hotspots" unique_id=1642455430 instance=ExtResource("14_4rrn2")]
+position = Vector2(205, 159)
+interaction_polygon = PackedVector2Array(0.683548, -129.56628, 6.6412506, -139.55223, 10.79599, -55.666103, 10.219406, -11.999992, 8.363647, 14.727295, 2.2964554, 4.8211994, 2.2050629, -10.338505)
+
 [node name="Regions" type="Node2D" parent="." unique_id=1952372499]
 
 [node name="Markers" type="Node2D" parent="." unique_id=845380452]
 
 [node name="Characters" type="Node2D" parent="." unique_id=1301835937]
-visible = false
+
+[node name="CharacterChatBbt *" parent="Characters" unique_id=1130404657 instance=ExtResource("7_s1hor")]
+position = Vector2(71, 64)
+metadata/EDITOR_TMP_COPY_OF = "ChatBbt"

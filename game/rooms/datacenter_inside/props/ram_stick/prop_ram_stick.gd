@@ -11,7 +11,15 @@ func _on_click() -> void:
 	await C.player.say("MY RAM, I FINALLY FOUND IT!!")
 	R.get_prop("RamStick").hide()
 	I.RamStick.add()
+	D.SlopBbt.turn_on_options(["BoomBBT"])	
+	D.SlopBbt.turn_off_options(["NoRules"])
+	D.SlopBbt.turn_off_options(["AboutBBT"])
+	D.SlopBbt.turn_off_options(["RamSearch"])
+	D.SlopBbt.turn_off_options(["Bye"])
 
+
+
+	
 
 # Called when the prop is double-clicked
 func _on_double_click() -> void:

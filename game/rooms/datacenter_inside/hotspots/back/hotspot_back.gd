@@ -8,7 +8,10 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the hotspot is clicked
 func _on_click() -> void:
-	R.goto_room("DatacenterEntrance")
+	if !I.RamStick.in_inventory:
+		R.goto_room("DatacenterEntrance")
+	else: 
+		await C.player.say("There is one thing i still have to ask ChatBBT")
 
 
 

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b547kb78seqk2"]
+
+[ext_resource type="Script" uid="uid://dtbq67lgcbmw" path="res://game/characters/chat_bbt/character_chat_bbt.gd" id="1_7iiyi"]
+[ext_resource type="Texture2D" uid="uid://b1g8q7kf1q5ww" path="res://game/assets/ditherscreen.png" id="2_ewl5v"]
+
+[node name="CharacterChatBbt" type="Area2D" unique_id=1130404657]
+script = ExtResource("1_7iiyi")
+text_color = Color(1, 0.63529414, 0, 1)
+script_name = "ChatBbt"
+description = "Chat Bbt"
+cursor = 8
+interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="." unique_id=1013894989]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=640147372]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=566225789]
+texture_filter = 1
+texture = ExtResource("2_ewl5v")
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="." unique_id=202566458]
+visible = false
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ObstaclePolygon" type="NavigationObstacle2D" parent="." unique_id=423813008]
+visible = false
+vertices = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
